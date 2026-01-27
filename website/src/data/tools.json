@@ -306,6 +306,23 @@
         "logo": "img/packageurl-js.png"
     },
     {
+        "name": "purl",
+        "publisher": "Jordan Harband <ljharb@gmail.com>",
+        "description": "a PURL ( https://tc54.org/purl/ ) parser and serializer",
+        "homepage": "https://github.com/ljharb/purl",
+        "source_download": "https://github.com/ljharb/purl",
+        "package_download": "https://www.npmjs.com/package/purl",
+        "language": "JavaScript",
+        "software_license": "MIT",
+        "data_license": "n/a",
+        "service_license": "n/a",
+        "type": "n/a",
+        "functions": "n/a",
+        "platform": "n/a",
+        "standards": "ECMA-427",
+        "notes": "n/a"
+    },
+    {
         "name": "packageurl-php",
         "publisher": "n/a",
         "description": "A parser and builder based on package url spec, implemented in PHP.",
