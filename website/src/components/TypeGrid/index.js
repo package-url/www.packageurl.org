@@ -16,17 +16,6 @@ export default function TypeGrid() {
 
     return (
         <div>
-            {/* <div
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    padding: 0,
-                    marginTop: 30,
-                }}
-            >
-                <h1 style={{ marginBottom: 0 }}>Registered PURL Types</h1>
-            </div> */}
-
             <div className={styles.purlGridWrapper}>
                 <div className={styles.purlGridContainer}>
                     <div className={styles.purlGrid}>
@@ -52,8 +41,6 @@ export default function TypeGrid() {
                     </div>
                 </div>
             </div>
-
-
         </div>
     );
 }

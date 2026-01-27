@@ -126,6 +126,24 @@
         "logo": "img/github-mark.svg"
     },
     {
+        "name": "hannesm/purl",
+        "publisher": "Hannes Mehnert",
+        "description": "This package provides decoders and encoders in OCaml.",
+        "homepage": "https://github.com/hannesm/purl",
+        "source_download": "https://github.com/hannesm/purl/releases",
+        "package_download": "n/a",
+        "language": "OCaml",
+        "software_license": "ISC",
+        "data_license": "n/a",
+        "service_license": "n/a",
+        "type": "Library",
+        "functions": "n/a",
+        "platform": "n/a",
+        "standards": "PURL v1.0",
+        "notes": "",
+        "logo": "img/logo_question_placeholder.svg"
+    },
+    {
         "name": "nscuro/versatile",
         "publisher": "Niklas Scuro",
         "description": "Java implementation of vers, a mostly universal version range specifier.",

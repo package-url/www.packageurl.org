@@ -141,6 +141,11 @@ export default function getPackages(baseUrl) {
             logo: `${baseUrl}img/oci.png`,
         },
         {
+            name: "opam",
+            url: "https://github.com/package-url/purl-spec/blob/main/types-doc/opam-definition.md",
+            logo: `${baseUrl}img/ocaml-colour-logo.svg`,
+        },
+        {
             name: "otp",
             url: "https://github.com/package-url/purl-spec/blob/main/types-doc/otp-definition.md",
             logo: `${baseUrl}img/otp-erlang.png`,
