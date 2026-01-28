@@ -1,18 +1,22 @@
-import React from "react";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import React from 'react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
-// 2025-10-15 Wednesday 17:28:05.  The new .js data file
-// import getPackages from "@site/src/data/getPackages";
-import getTypes from "@site/src/data/getTypes";
+import getTypes from '@site/src/data/getTypes';
 
-// export default function HomepageContent() {
 export default function TypeGrid() {
     // Get baseUrl from Docusaurus context
     const { siteConfig } = useDocusaurusContext();
     const { baseUrl } = siteConfig;
     const types = getTypes(baseUrl);
+
+    // Handle missing logos
+    const isUsableValue = (value) =>
+        value &&
+        value !== 'Not applicable' &&
+        value !== 'Not available' &&
+        value !== 'n/a';
 
     return (
         <div>
@@ -23,19 +27,25 @@ export default function TypeGrid() {
                             <a
                                 key={idx}
                                 href={pkg.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                target='_blank'
+                                rel='noopener noreferrer'
                                 className={styles.packageCell}
                             >
-                                <img
-                                    src={pkg.logo}
-                                    alt={pkg.name}
-                                    className={`${styles.packageLogo} ${
-                                        styles[pkg.name]
-                                    }`}
-                                />
+                                <div className={styles.logoSlot}>
+                                    {isUsableValue(pkg.logo) && (
+                                        <img
+                                            src={pkg.logo}
+                                            alt={pkg.name}
+                                            className={`${styles.packageLogo} ${
+                                                styles[pkg.name]
+                                            }`}
+                                        />
+                                    )}
+                                </div>
 
-                                <span>{pkg.name}</span>
+                                <span className={styles.packageName}>
+                                    {pkg.name}
+                                </span>
                             </a>
                         ))}
                     </div>

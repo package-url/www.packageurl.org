@@ -143,3 +143,15 @@
   width: 64px;
   height: 64px;
 }
+
+/* Add minimal structure to handle types for which there is no associated logo image. */
+.logoSlot {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.packageName {
+    margin-top: auto;
+}

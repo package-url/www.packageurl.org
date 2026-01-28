@@ -22,8 +22,8 @@ const sidebars = {
         'purl/purl-spec-adopters',
     ],
     vers_spec: [
-        'vers-spec/vers-spec-overview',
-        'vers-spec/vers-spec-documentation',
+        'vers-spec/vers-spec-introduction',
+        'vers-spec/vers-spec-specification',
         'vers-spec/vers-spec-schemas',
         'vers-spec/vers-spec-adopters',
     ],

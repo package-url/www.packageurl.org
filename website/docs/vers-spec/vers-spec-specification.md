@@ -1,7 +1,7 @@
 ---
-id: vers-spec-documentation
-title: Documentation
-sidebar_label: Documentation
+id: vers-spec-specification
+title: Specification
+sidebar_label: Specification
 ---
 
 <!--

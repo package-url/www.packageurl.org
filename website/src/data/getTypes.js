@@ -78,7 +78,7 @@ export default function getPackages(baseUrl) {
         {
             name: "generic",
             url: "https://github.com/package-url/purl-spec/blob/main/types-doc/generic-definition.md",
-            logo: `${baseUrl}img/no_logo_placeholder.svg`,
+            logo: "n/a",
         },
         {
             name: "github",
@@ -173,7 +173,7 @@ export default function getPackages(baseUrl) {
         {
             name: "swid",
             url: "https://github.com/package-url/purl-spec/blob/main/types-doc/swid-definition.md",
-            logo: `${baseUrl}img/no_logo_placeholder.svg`,
+            logo: "n/a",
         },
         {
             name: "swift",

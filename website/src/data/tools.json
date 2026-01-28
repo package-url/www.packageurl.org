@@ -6,16 +6,17 @@
         "homepage": "https://github.com/andrew/vers",
         "source_download": "https://github.com/andrew/vers/tags",
         "package_download": "https://rubygems.org/gems/vers",
+        "documentation_url": "n/a",
         "language": "Ruby",
         "software_license": "MIT",
         "data_license": "n/a",
         "service_license": "n/a",
         "type": "Library",
-        "functions": "compare, parse, sort",
+        "functions": "n/a",
         "platform": "n/a",
         "standards": "VERS",
-        "notes": "Currently listed as Tool and Adopter.  No logo located.",
-        "logo": "img/logo_question_placeholder.svg"
+        "notes": "No logo located.",
+        "logo": "n/a"
     },
     {
         "name": "Bulletproof Trust",
@@ -24,12 +25,13 @@
         "homepage": "https://www.darkskytechnology.com/bulletproof-trust",
         "source_download": "n/a",
         "package_download": "n/a",
+        "documentation_url": "n/a",
         "language": "n/a",
         "software_license": "n/a",
         "data_license": "n/a",
         "service_license": "n/a",
         "type": "Application",
-        "functions": "consume, transform",
+        "functions": "n/a",
         "platform": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
@@ -42,6 +44,7 @@
         "homepage": "https://github.com/csaf-rs/vers-rs",
         "source_download": "https://github.com/csaf-rs/vers-rs/releases",
         "package_download": "n/a",
+        "documentation_url": "n/a",
         "language": "Rust",
         "software_license": "Apache-2.0",
         "data_license": "n/a",
@@ -51,7 +54,7 @@
         "platform": "n/a",
         "standards": "VERS",
         "notes": "n/a",
-        "logo": "img/csaf-rs_vers-rs.png"
+        "logo": "n/a"
     },
     {
         "name": "Dependency-Track",
@@ -60,6 +63,7 @@
         "homepage": "https://www.owasp.org/index.php/OWASP_Dependency_Track_Project",
         "source_download": "https://github.com/DependencyTrack/dependency-track/releases",
         "package_download": "https://github.com/DependencyTrack/dependency-track/releases",
+        "documentation_url": "n/a",
         "language": "Java",
         "software_license": "Apache-2.0",
         "data_license": "n/a",
@@ -78,6 +82,7 @@
         "homepage": "https://ecosyste.ms/",
         "source_download": "n/a",
         "package_download": "n/a",
+        "documentation_url": "n/a",
         "language": "Ruby",
         "software_license": "AGPL-3.0-only",
         "data_license": "CC-BY-SA-4.0",
@@ -86,7 +91,7 @@
         "functions": "n/a",
         "platform": "n/a",
         "standards": "PURL v1.0",
-        "notes": "See also https://github.com/ecosyste-ms/home (no releases).  Should 'Type' be 'Applications'? (plural)",
+        "notes": "See also https://github.com/ecosyste-ms/home (no releases).",
         "logo": "img/ecosyste.ms.png"
     },
     {
@@ -96,6 +101,7 @@
         "homepage": "https://github.com/erlef/purl",
         "source_download": "https://github.com/erlef/purl/releases",
         "package_download": "https://hex.pm/packages/purl",
+        "documentation_url": "n/a",
         "language": "Erlang, Elixir",
         "software_license": "Apache-2.0",
         "data_license": "n/a",
@@ -114,6 +120,7 @@
         "homepage": "https://docs.github.com/en/rest/dependency-graph/dependency-submission",
         "source_download": "n/a",
         "package_download": "n/a",
+        "documentation_url": "n/a",
         "language": "n/a",
         "software_license": "n/a",
         "data_license": "n/a",
@@ -132,6 +139,7 @@
         "homepage": "https://github.com/hannesm/purl",
         "source_download": "https://github.com/hannesm/purl/releases",
         "package_download": "n/a",
+        "documentation_url": "n/a",
         "language": "OCaml",
         "software_license": "ISC",
         "data_license": "n/a",
@@ -140,8 +148,27 @@
         "functions": "n/a",
         "platform": "n/a",
         "standards": "PURL v1.0",
-        "notes": "",
-        "logo": "img/logo_question_placeholder.svg"
+        "notes": "n/a",
+        "logo": "n/a"
+    },
+    {
+        "name": "ljharb/purl",
+        "publisher": "Jordan Harband <ljharb@gmail.com>",
+        "description": "A PURL ( https://tc54.org/purl/ ) parser and serializer.",
+        "homepage": "https://github.com/ljharb/purl",
+        "source_download": "https://github.com/ljharb/purl",
+        "package_download": "https://www.npmjs.com/package/purl",
+        "documentation_url": "n/a",
+        "language": "JavaScript",
+        "software_license": "MIT",
+        "data_license": "n/a",
+        "service_license": "n/a",
+        "type": "n/a",
+        "functions": "n/a",
+        "platform": "n/a",
+        "standards": "PURL v1.0",
+        "notes": "n/a",
+        "logo": "n/a"
     },
     {
         "name": "nscuro/versatile",
@@ -150,6 +177,7 @@
         "homepage": "https://github.com/nscuro/versatile",
         "source_download": "https://github.com/nscuro/versatile/releases",
         "package_download": "n/a",
+        "documentation_url": "n/a",
         "language": "Java",
         "software_license": "Apache-2.0",
         "data_license": "n/a",
@@ -158,7 +186,7 @@
         "functions": "n/a",
         "platform": "n/a",
         "standards": "VERS",
-        "notes": "https://github.com/package-url/versatile is a fork. Currently listed as Tool and Adopter.  2025-11-18. https://central.sonatype.com/artifact/io.github.nscuro/versatile also exists but stops at v0.7.0 while GitHub has v0.13.1.",
+        "notes": "https://github.com/package-url/versatile is a fork. https://central.sonatype.com/artifact/io.github.nscuro/versatile also exists but stops at v0.7.0 while nscuro/versatile has continued to release new versions into 2026.",
         "logo": "img/nscuro-versatile.jpg"
     },
     {
@@ -168,6 +196,7 @@
         "homepage": "https://ossindex.sonatype.org/",
         "source_download": "https://github.com/sonatype/ossindex-public/releases",
         "package_download": "n/a",
+        "documentation_url": "n/a",
         "language": "Java",
         "software_license": "Apache-2.0",
         "data_license": "n/a",
@@ -186,6 +215,7 @@
         "homepage": "https://oss-review-toolkit.org/",
         "source_download": "https://github.com/oss-review-toolkit/ort/releases",
         "package_download": "https://github.com/oss-review-toolkit/ort/releases",
+        "documentation_url": "n/a",
         "language": "Kotlin",
         "software_license": "Apache-2.0",
         "data_license": "n/a",
@@ -204,6 +234,7 @@
         "homepage": "https://osv.dev/",
         "source_download": "https://github.com/google/osv.dev/releases",
         "package_download": "n/a",
+        "documentation_url": "n/a",
         "language": "Python",
         "software_license": "Apache-2.0",
         "data_license": "n/a",
@@ -222,6 +253,7 @@
         "homepage": "https://github.com/scm-rs/packageurl.rs",
         "source_download": "https://github.com/scm-rs/packageurl.rs/releases",
         "package_download": "https://crates.io/crates/packageurl",
+        "documentation_url": "n/a",
         "language": "Rust",
         "software_license": "MIT",
         "data_license": "n/a",
@@ -231,7 +263,7 @@
         "platform": "n/a",
         "standards": "PURL v1.0",
         "notes": "https://github.com/package-url/packageurl.rs is a fork.",
-        "logo": "img/packageurl.rs.png"
+        "logo": "n/a"
     },
     {
         "name": "packageurl-dotnet",
@@ -240,6 +272,7 @@
         "homepage": "https://github.com/package-url/packageurl-dotnet",
         "source_download": "https://github.com/package-url/packageurl-dotnet/releases",
         "package_download": "https://www.nuget.org/packages/packageurl-dotnet/",
+        "documentation_url": "n/a",
         "language": "C#",
         "software_license": "MIT",
         "data_license": "n/a",
@@ -249,7 +282,7 @@
         "platform": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "img/packageurl-dotnet.png"
+        "logo": "n/a"
     },
     {
         "name": "packageurl-go",
@@ -258,6 +291,7 @@
         "homepage": "https://github.com/package-url/packageurl-go",
         "source_download": "https://github.com/package-url/packageurl-go/releases",
         "package_download": "https://pkg.go.dev/search?q=packageurl-go",
+        "documentation_url": "n/a",
         "language": "Go",
         "software_license": "MIT",
         "data_license": "n/a",
@@ -267,7 +301,7 @@
         "platform": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "img/packageurl-go.png"
+        "logo": "n/a"
     },
     {
         "name": "packageurl-java",
@@ -276,6 +310,7 @@
         "homepage": "https://github.com/package-url/packageurl-java",
         "source_download": "https://github.com/package-url/packageurl-java",
         "package_download": "https://central.sonatype.com/artifact/com.github.package-url/packageurl-java",
+        "documentation_url": "n/a",
         "language": "Java",
         "software_license": "MIT",
         "data_license": "n/a",
@@ -285,7 +320,7 @@
         "platform": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "img/packageurl-java.png"
+        "logo": "n/a"
     },
     {
         "name": "packageurl-js",
@@ -294,6 +329,7 @@
         "homepage": "https://github.com/package-url/packageurl-js",
         "source_download": "https://github.com/package-url/packageurl-js",
         "package_download": "https://www.npmjs.com/package/packageurl-js",
+        "documentation_url": "n/a",
         "language": "JavaScript",
         "software_license": "MIT",
         "data_license": "n/a",
@@ -303,7 +339,7 @@
         "platform": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "img/packageurl-js.png"
+        "logo": "n/a"
     },
     {
         "name": "packageurl-php",
@@ -312,6 +348,7 @@
         "homepage": "https://github.com/package-url/packageurl-php",
         "source_download": "https://github.com/package-url/packageurl-php",
         "package_download": "https://packagist.org/packages/package-url/packageurl-php",
+        "documentation_url": "n/a",
         "language": "PHP",
         "software_license": "MIT",
         "data_license": "n/a",
@@ -321,7 +358,7 @@
         "platform": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "img/packageurl-php.png"
+        "logo": "n/a"
     },
     {
         "name": "packageurl-python",
@@ -330,6 +367,7 @@
         "homepage": "https://github.com/package-url/packageurl-python",
         "source_download": "https://github.com/package-url/packageurl-python",
         "package_download": "https://pypi.org/project/packageurl-python/",
+        "documentation_url": "n/a",
         "language": "Python",
         "software_license": "MIT",
         "data_license": "n/a",
@@ -339,7 +377,7 @@
         "platform": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "img/packageurl-python.png"
+        "logo": "n/a"
     },
     {
         "name": "packageurl-ruby",
@@ -348,6 +386,7 @@
         "homepage": "https://github.com/package-url/packageurl-ruby",
         "source_download": "https://github.com/package-url/packageurl-ruby",
         "package_download": "https://rubygems.org/gems/packageurl-ruby",
+        "documentation_url": "n/a",
         "language": "Ruby",
         "software_license": "MIT",
         "data_license": "n/a",
@@ -357,7 +396,7 @@
         "platform": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "img/packageurl-ruby.png"
+        "logo": "n/a"
     },
     {
         "name": "packageurl-swift",
@@ -366,6 +405,7 @@
         "homepage": "https://github.com/package-url/packageurl-swift",
         "source_download": "n/a",
         "package_download": "n/a",
+        "documentation_url": "n/a",
         "language": "Swift",
         "software_license": "MIT",
         "data_license": "n/a",
@@ -375,7 +415,7 @@
         "platform": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "img/packageurl-swift.png"
+        "logo": "n/a"
     },
     {
         "name": "perl-URI-PackageURL",
@@ -384,6 +424,7 @@
         "homepage": "https://github.com/giterlizzi/perl-URI-PackageURL",
         "source_download": "n/a",
         "package_download": "n/a",
+        "documentation_url": "n/a",
         "language": "Perl",
         "software_license": "Artistic-2.0",
         "data_license": "n/a",
@@ -393,7 +434,7 @@
         "platform": "n/a",
         "standards": "PURL v1.0, VERS",
         "notes": "https://github.com/package-url/perl-URI-PackageURL is a fork. Currently also listed as VERS adopter: URI-PackageURL.",
-        "logo": "img/perl-URI-PackageURL.jpg"
+        "logo": "n/a"
     },
     {
         "name": "purl-swid-generator-ui",
@@ -402,6 +443,7 @@
         "homepage": "https://github.com/package-url/purl-swid-generator-ui",
         "source_download": "n/a",
         "package_download": "n/a",
+        "documentation_url": "n/a",
         "language": "Vue",
         "software_license": "MIT",
         "data_license": "n/a",
@@ -411,7 +453,7 @@
         "platform": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "img/purl-swid-generator-ui.png"
+        "logo": "n/a"
     },
     {
         "name": "PUrlKt",
@@ -420,6 +462,7 @@
         "homepage": "https://github.com/iseki0/PUrlKt",
         "source_download": "n/a",
         "package_download": "n/a",
+        "documentation_url": "n/a",
         "language": "Kotlin",
         "software_license": "Apache-2.0",
         "data_license": "n/a",
@@ -438,6 +481,7 @@
         "homepage": "https://github.com/lizmat/PURL",
         "source_download": "n/a",
         "package_download": "n/a",
+        "documentation_url": "n/a",
         "language": "Raku",
         "software_license": "Artistic-2.0",
         "data_license": "n/a",
@@ -447,7 +491,7 @@
         "platform": "n/a",
         "standards": "PURL v1.0",
         "notes": "https://github.com/package-url/PURL-raku is a fork.",
-        "logo": "img/purl-raku.jpg"
+        "logo": "n/a"
     },
     {
         "name": "Scancode Toolkit",
@@ -456,6 +500,7 @@
         "homepage": "https://github.com/aboutcode-org/scancode-toolkit",
         "source_download": "n/a",
         "package_download": "n/a",
+        "documentation_url": "n/a",
         "language": "Python",
         "software_license": "Apache-2.0",
         "data_license": "n/a",
@@ -464,8 +509,8 @@
         "functions": "n/a",
         "platform": "n/a",
         "standards": "PURL v1.0, VERS",
-        "notes": "Currently listed as Tool and Adopter.",
-        "logo": "img/logo_question_placeholder.svg"
+        "notes": "n/a",
+        "logo": "img/nexB_icon.svg"
     },
     {
         "name": "Scancode.io",
@@ -474,6 +519,7 @@
         "homepage": "https://github.com/aboutcode-org/scancode.io",
         "source_download": "n/a",
         "package_download": "n/a",
+        "documentation_url": "n/a",
         "language": "Python",
         "software_license": "Apache-2.0",
         "data_license": "n/a",
@@ -483,7 +529,7 @@
         "platform": "Container, Linux",
         "standards": "PURL v1.0, VERS",
         "notes": "n/a",
-        "logo": "img/logo_question_placeholder.svg"
+        "logo": "img/nexB_icon.svg"
     },
     {
         "name": "Sonatype Lifecycle",
@@ -492,6 +538,7 @@
         "homepage": "https://www.sonatype.com/product-nexus-lifecycle",
         "source_download": "n/a",
         "package_download": "n/a",
+        "documentation_url": "n/a",
         "language": "n/a",
         "software_license": "n/a",
         "data_license": "n/a",
@@ -510,6 +557,7 @@
         "homepage": "https://www.reversinglabs.com/products/software-supply-chain-security",
         "source_download": "n/a",
         "package_download": "n/a",
+        "documentation_url": "n/a",
         "language": "n/a",
         "software_license": "n/a",
         "data_license": "n/a",
@@ -519,7 +567,7 @@
         "platform": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "img/logo_question_placeholder.svg"
+        "logo": "n/a"
     },
     {
         "name": "univers",
@@ -528,6 +576,7 @@
         "homepage": "https://github.com/aboutcode-org/univers",
         "source_download": "https://github.com/package-url/univers",
         "package_download": "https://pypi.org/project/univers/",
+        "documentation_url": "n/a",
         "language": "Python",
         "software_license": "MIT",
         "data_license": "n/a",
@@ -537,7 +586,7 @@
         "platform": "n/a",
         "standards": "VERS",
         "notes": "https://github.com/package-url/univers is a fork.",
-        "logo": "img/logo_question_placeholder.svg"
+        "logo": "img/nexB_icon.svg"
     },
     {
         "name": "ZEN SecDB",
@@ -546,6 +595,7 @@
         "homepage": "https://secdb.nttzen.cloud/",
         "source_download": "n/a",
         "package_download": "n/a",
+        "documentation_url": "n/a",
         "language": "n/a",
         "software_license": "n/a",
         "data_license": "n/a",

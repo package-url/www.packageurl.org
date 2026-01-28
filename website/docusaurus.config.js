@@ -32,13 +32,12 @@ const config = {
 
     // Set the production url
     url: 'https://package-url.github.io/',
-    // For temp xyz dev use as needed:
-    // url: "https://packageurl.jmh2025.xyz",
 
     // The /<baseUrl>/ pathname under which the site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: '/www.packageurl.org/',
     // For DreamHost deployment:
+    // NOTE: Also required to locally display .html files in the /schemas folder!
     // baseUrl: "/",
 
     // TODO: Determine whether still needed to address file-not-found when linking to json-schema-for-humans .html files.
@@ -78,7 +77,7 @@ const config = {
                             'purl/specification.md': `https://github.com/package-url/purl-spec/blob/main/docs/standard/specification.md`,
                             'purl/tests.md': `https://github.com/package-url/purl-spec/blob/main/docs/tests.md`,
 
-                            // VERS Specification
+                            // "VERS" section
                             'vers-spec/vers-spec-overview.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
                             'vers-spec/vers-spec-documentation.md': `https://github.com/package-url/vers-spec/blob/main/VERSION-RANGE-SPEC.md`,
                             'vers-spec/vers-spec-schemas.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
@@ -134,7 +133,7 @@ const config = {
                         type: 'docSidebar',
                         sidebarId: 'vers_spec',
                         position: 'left',
-                        label: 'VERS Specification',
+                        label: 'VERS',
                     },
                     {
                         type: 'docSidebar',
@@ -156,46 +155,7 @@ const config = {
             },
             footer: {
                 style: 'dark',
-                // links: [
-                //     {
-                //         title: '\u00A0', // non-breaking space: avoids empty-string error, renders blank
-                //         items: [
-                //             {
-                //                 html: '<img src="/img/logo1.png" alt="Logo 1" style="max-height:40px; margin-bottom:8px;" />',
-                //             },
-                //             {
-                //                 html: '<img src="/img/logo2.png" alt="Logo 2" style="max-height:40px;" />',
-                //             },
-                //         ],
-                //     },
-                //     {
-                //         title: 'Social',
-                //         items: [
-                //             { label: 'Twitter', href: '#' },
-                //             { label: 'Facebook', href: '#' },
-                //         ],
-                //     },
-                //     {
-                //         title: 'GitHub',
-                //         items: [
-                //             { label: 'Repo 1', href: '#' },
-                //             { label: 'Repo 2', href: '#' },
-                //         ],
-                //     },
-                //     {
-                //         title: 'Gitter',
-                //         items: [{ label: 'Room 1', href: '#' }],
-                //     },
-                //     {
-                //         title: 'LinkedIn',
-                //         items: [{ label: 'Company Page', href: '#' }],
-                //     },
-                //     {
-                //         title: 'Slack',
-                //         items: [{ label: 'Community Slack', href: '#' }],
-                //     },
-                // ],
-                copyright: `Copyright © The Package-URL authors &nbsp; | &nbsp; License: _____ &nbsp; | &nbsp; Built with Docusaurus <br />Last deployed: ${getDeploymentTimestamp()}`,
+                copyright: `Copyright © The Package-URL authors &nbsp; | &nbsp; License: MIT &nbsp; | &nbsp; Built with Docusaurus <br />Last deployed: ${getDeploymentTimestamp()}`,
             },
             prism: {
                 theme: prismThemes.github,
