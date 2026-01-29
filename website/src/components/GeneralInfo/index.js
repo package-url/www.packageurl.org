@@ -10,9 +10,7 @@ export default function GeneralInfoSection() {
                     <h2>Community call</h2>
                     <div className={styles.card}>
                         <p>
-                            Join our next PURL community call on 2026-01-07 to
-                            discuss the status of the PURL standard submission
-                            to Ecma.
+                            Join our next PURL community call on 2026-02-04.
                         </p>
                         <p>
                             The schedules for the PURL community and TC54-TG2
