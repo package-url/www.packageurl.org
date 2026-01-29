@@ -180,5 +180,15 @@ export default function getPackages(baseUrl) {
             url: "https://github.com/package-url/purl-spec/blob/main/types-doc/swift-definition.md",
             logo: `${baseUrl}img/Swift_logo_color.svg`,
         },
+        {
+            name: "vscode-extension",
+            url: "https://github.com/package-url/purl-spec/blob/main/types-doc/vscode-extension-definition.md",
+            logo: "n/a",
+        },
+        {
+            name: "yocto",
+            url: "https://github.com/package-url/purl-spec/blob/main/types-doc/yocto-definition.md",
+            logo: "n/a",
+        },
     ];
 }

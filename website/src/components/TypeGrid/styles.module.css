@@ -101,6 +101,10 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease,
         border-color 0.2s ease;
     color: #1a3e7a;
+
+    /* Responding to "vscode-extension' type, which takes up 2
+    vertically-spaced lines of real estate. */
+    line-height: 1;
 }
 
 .packageCell:hover {
