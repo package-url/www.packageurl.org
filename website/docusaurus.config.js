@@ -1,9 +1,12 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 
 // Add flexibility to config and run with different baseUrl values for GH Pages vs. DreamHost.
-const isProd = process.env.NODE_ENV === 'production';
+// 2026-02-03 Tuesday 12:53:26.  Replaced by today's update?
+// const isProd = process.env.NODE_ENV === 'production';
+
 // Use BASE_URL environment variable if set; fallback to "/" for dev
-const baseUrl = process.env.BASE_URL || '/';
+// 2026-02-03 Tuesday 12:53:26.  Replaced by today's update?
+// const baseUrl = process.env.BASE_URL || '/';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -14,6 +17,34 @@ const getDeploymentTimestamp = () => {
     const weekday = now.toLocaleDateString('en-US', { weekday: 'long' });
     return `${date} ${time} UTC`;
 };
+
+// -------------------------------
+// 2026-02-03 Tuesday 12:55:38.
+// Deployment target: local | gh | dreamhost
+/** @type {'local' | 'gh' | 'dreamhost'} */
+let deployTarget = 'local';
+
+if (process.env.DEPLOY_TARGET === 'gh') {
+    deployTarget = 'gh';
+} else if (process.env.DEPLOY_TARGET === 'dreamhost') {
+    deployTarget = 'dreamhost';
+}
+
+const siteConfig = {
+    local: {
+        url: 'http://localhost',
+        baseUrl: '/',
+    },
+    gh: {
+        url: 'https://package-url.github.io',
+        baseUrl: '/www.packageurl.org/',
+    },
+    dreamhost: {
+        url: 'https://www.packageurl.org',
+        baseUrl: '/',
+    },
+};
+// -------------------------------
 
 const config = {
     title: 'www.packageurl.org',
@@ -30,22 +61,26 @@ const config = {
         v4: true, // Improve compatibility with the upcoming Docusaurus v4
     },
 
-    // Set the production url
-    url: 'https://package-url.github.io/',
+    // // Set the production url
+    // url: 'https://package-url.github.io/',
 
-    // The /<baseUrl>/ pathname under which the site is served
-    // For GitHub pages deployment, it is often '/<projectName>/'
-    baseUrl: '/www.packageurl.org/',
-    // For DreamHost deployment:
-    // NOTE: Also required to locally display .html files in the /schemas folder!
-    // baseUrl: "/",
+    // // The /<baseUrl>/ pathname under which the site is served
+    // // For GitHub pages deployment, it is often '/<projectName>/'
+    // baseUrl: '/www.packageurl.org/',
+    // // For DreamHost deployment:
+    // // NOTE: Also required to locally display .html files in the /schemas folder!
+    // // baseUrl: "/",
 
-    // TODO: Determine whether still needed to address file-not-found when linking to json-schema-for-humans .html files.
-    staticDirectories: ['static'], // Ensure static folder is included
+    // // TODO: Determine whether still needed to address file-not-found when linking to json-schema-for-humans .html files.
+    // // staticDirectories: ['static'], // Ensure static folder is included
 
-    // GitHub pages deployment config.
-    organizationName: 'Package-URL',
-    projectName: 'www.packageurl.org',
+    // // GitHub pages deployment config.
+    // organizationName: 'Package-URL',
+    // projectName: 'www.packageurl.org',
+
+    url: siteConfig[deployTarget].url,
+    baseUrl: siteConfig[deployTarget].baseUrl,
+    trailingSlash: false,
 
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
