@@ -72,7 +72,7 @@ export default function SpecGrid() {
                 <span className={styles.helpIconWrapper}>
                     <HoverTooltipCard tooltip={help}>
                         <img
-                            src="/img/help.svg"
+                            src="./img/help.svg"
                             alt={`${label} help`}
                             className={styles.helpIcon}
                         />
