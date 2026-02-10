@@ -113,11 +113,11 @@ export default function ToolGrid() {
                             <div>
                                 <div className={styles.topRow}>
                                     <h4 className={styles.toolName}>
-                                        {tool.homepage ? (
+                                        {tool.homepage_url ? (
                                             <a
-                                                href={tool.homepage}
+                                                href={tool.homepage_url}
                                                 target={
-                                                    tool.homepage.startsWith(
+                                                    tool.homepage_url.startsWith(
                                                         'http',
                                                     )
                                                         ? '_blank'
