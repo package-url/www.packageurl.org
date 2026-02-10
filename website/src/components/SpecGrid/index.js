@@ -38,7 +38,7 @@ export default function SpecGrid() {
         );
     }
 
-    // 2026-02-06 Friday 15:20:38.
+    // Works with FieldLabelHelpCard.
     function HoverTooltipCard({ children, tooltip }) {
         const [showTooltip, setShowTooltip] = React.useState(false);
 
@@ -60,6 +60,7 @@ export default function SpecGrid() {
     }
 
 
+    // This version uses the field name itself -- no icon -- to trigger the tootip.
     function FieldLabelHelpCard({ label, help }) {
         if (!help) {
             return <strong>{label}:</strong>;
@@ -67,22 +68,17 @@ export default function SpecGrid() {
 
         return (
             <span className={styles.fieldLabelWrapper}>
-                <span className={styles.fieldLabel}>{label}</span>
-
-                <span className={styles.helpIconWrapper}>
-                    <HoverTooltipCard tooltip={help}>
-                        <img
-                            src="./img/help.svg"
-                            alt={`${label} help`}
-                            className={styles.helpIcon}
-                        />
-                    </HoverTooltipCard>
-                </span>
+                <HoverTooltipCard tooltip={help}>
+                    <strong className={styles.fieldLabelWithHelp}>
+                        {label}
+                    </strong>
+                </HoverTooltipCard>
 
                 <span className={styles.fieldColon}>:&nbsp;</span>
             </span>
         );
     }
+
 
     // Close modal on Escape key
     useEffect(() => {
