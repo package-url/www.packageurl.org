@@ -265,7 +265,7 @@ export default function SpecGrid() {
                                             ) && (
                                                 <li>
                                                     <FieldLabelHelpCard
-                                                        label='Home URL'
+                                                        label='Homepage URL'
                                                         help={
                                                             spec_field_help.homepage_url
                                                         }
