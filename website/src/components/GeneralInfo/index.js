@@ -8,23 +8,6 @@ export default function GeneralInfoSection() {
                 {/* Column 1 */}
                 <div className={styles.column}>
                     <h2>Community meetings</h2>
-                    {/* <div className={styles.card}>
-                        <p>
-                            Join our next PURL community call on 2026-02-18.
-                        </p>
-                        <p>
-                            The schedules for the PURL community and TC54-TG2
-                            calls are available at{' '}
-                            <a
-                                className='a_page'
-                                href='https://calendar.google.com/calendar/u/0/embed?src=c_884decde5a152902bb51a62f89550d0f3748484534f08c63792f2e654f2a7ebc@group.calendar.google.com'
-                                target='_blank'
-                            >
-                                OWASP Software Supply Chain Community Calendar
-                            </a>
-                            .
-                        </p>
-                    </div> */}
                     <div className={styles.card}>
                         <p>
                             The PURL community has two recurring meetings where
@@ -38,7 +21,7 @@ export default function GeneralInfoSection() {
 
                         <p>
                             See Upcoming Meetings at{' '}
-                            <a href='https://tc54.org/purl/'>
+                            <a href='https://tc54.org/purl/' target='_blank'>
                                 Package-URL | TC54
                             </a>{' '}
                             for details about the dates and times.
