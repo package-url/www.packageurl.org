@@ -270,7 +270,28 @@
         "platforms": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "img/osv_logo_light-full.svg"
+        "logo": "img/osv-logo.png"
+    },
+    {
+        "name": "OSV-Scanner",
+        "publisher": "Google",
+        "description": "OSV-Scanner provides an officially supported frontend to the OSV database and CLI interface to OSV-Scalibr that connects a project’s list of dependencies with the vulnerabilities that affect them.",
+        "homepage_url": "https://osv.dev/",
+        "repository_url": "n/a",
+        "source_download": "https://github.com/google/osv-scanner",
+        "package_download": "n/a",
+        "documentation_url": "https://google.github.io/osv-scanner/",
+        "service_url": "n/a",
+        "language": "Go",
+        "software_license": "Apache-2.0",
+        "data_license": "n/a",
+        "service_license": "n/a",
+        "type": "Application, CLI Utility",
+        "functions": "n/a",
+        "platforms": "Linux, MacOS, Windows",
+        "standards": "PURL v1.0",
+        "notes": "n/a",
+        "logo": "img/osv-logo.png"
     },
     {
         "name": "packageurl.rs",

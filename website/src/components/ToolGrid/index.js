@@ -139,7 +139,13 @@ export default function ToolGrid() {
                                     </h4>
 
                                     {isUsableValue(tool.logo) && (
-                                        <div className={styles.logoWrapper}>
+                                        <div
+                                            className={`${styles.logoWrapper} ${
+                                                tool.name === 'OSV-Scanner' || tool.name === 'OSV.dev'
+                                                    ? styles.blackBg
+                                                    : ''
+                                            }`}
+                                        >
                                             <img
                                                 src={tool.logo}
                                                 alt={`${tool.name} logo`}
@@ -379,7 +385,9 @@ export default function ToolGrid() {
                                                             styles.modalLinkUrl
                                                         }
                                                     >
-                                                        {selectedTool.homepage_url}
+                                                        {
+                                                            selectedTool.homepage_url
+                                                        }
                                                     </a>
                                                 </li>
                                             )}
@@ -404,7 +412,9 @@ export default function ToolGrid() {
                                                             styles.modalLinkUrl
                                                         }
                                                     >
-                                                        {selectedTool.repository_url}
+                                                        {
+                                                            selectedTool.repository_url
+                                                        }
                                                     </a>
                                                 </li>
                                             )}

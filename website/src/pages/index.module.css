@@ -1,12 +1,11 @@
-/* 2025-10-14 Tuesday 09:50:16.  This file is not currently used and is
-retained but commented out in /website/src/pages/index.js. */
+/* This file is not currently used but is retained since it is a companion to its sibling index.js. */
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
 
-  /* CycloneDX primary background */
   background-image:
     linear-gradient(to right, #08090cff, #6A1B9A, #ff0055ff),
     url('/img/background-image.png');

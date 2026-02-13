@@ -12,6 +12,7 @@ const sidebars = {
             collapsed: false,
             items: [
                 'purl/specification',
+                'purl/common-qualifiers',
                 'purl/how-to-build',
                 'purl/how-to-parse',
                 'purl/tests',

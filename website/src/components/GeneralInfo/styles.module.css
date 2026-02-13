@@ -1,28 +1,8 @@
-/* .toolGridWrapper { */
 .generalInfoWrapper {
-    margin: 2rem auto;
     margin: 1rem auto;
     padding: 1rem;
-    background-color: #e8e8e8;
     background-color: #f5f5f5;
-    border-radius: 12px;
-
-    border: solid 1px #b8b8b8;
     border: 0;
-}
-
-.sectionHeader {
-    display: flex;
-    /* justify-content: center; */
-
-    /* background-color: #ffcccc; */
-    padding: 0px 0px 0px 0px;
-    /* padding: 1rem 2rem; */
-}
-
-.sectionHeader h1,
-.sectionHeader h2 {
-    margin-bottom: 0px;
 }
 
 .twoColumn {
@@ -30,67 +10,40 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     max-width: 1200px;
-    margin: 3rem auto;
-    padding: 0 2rem;
-    padding-top: 1rem;
     padding: 0px 0px 0px 0px;
-    margin-top: 0;
     margin: 0;
-    border-radius: 10px;
-    /* 2025-11-05 Wednesday 14:48:46.   */
-    /* box-shadow: 0 0 6px #0000001a; */
-    border: solid 1px #e0e0e0;
     border: 0;
-    background-color: #f8f8f8;
     background-color: transparent;
 }
 
 .card {
-    background: #f8f9fa;
     background: #ffffff;
     padding: 1rem;
-    border-radius: 8px;
-    /* margin-bottom: 1rem; */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-
     border: 1px solid #909090;
     border-radius: 12px;
-    line-height: 1.25rem;
     line-height: 1.4rem;
 }
 
-/* Handle dark mode for the card */
-/* .card {
-    background-color: var(--ifm-background-surface-color);
-    color: var(--ifm-font-color-base);
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 6px #0000001a;
-} */
-
-/* 2025-11-22 Saturday 12:08:53.  Does this work? */
 /* Dark mode */
 [data-theme='dark'] .card {
-  background: #1d1f21; /* dark gray */
-  color: #e5e5e5;      /* light text */
+    background: #1d1f21; /* dark gray */
+    color: #e5e5e5; /* light text */
 }
 
-[data-theme='dark'] .sectionHeader h1,
 [data-theme='dark'] .column h2 {
-  color: #f0f0f0;
+    color: #f0f0f0;
 }
-
 
 .twoColumn h2 {
-    color: #336699;
     color: #992600;
 }
 [data-theme='dark'] .twoColumn h2 {
-  color: #336699;
+    color: #336699;
 }
 
 [data-theme='dark'] .generalInfoWrapper {
-  background: #303030;
-  border: solid 1px #505050;
-  color: #e5e5e5;
+    background: #303030;
+    border: solid 1px #505050;
+    color: #e5e5e5;
 }
