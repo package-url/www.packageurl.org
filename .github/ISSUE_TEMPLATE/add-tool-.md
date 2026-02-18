@@ -2,7 +2,7 @@
 name: 'Add a Tool '
 about: Add a tool that supports PURL or VERS
 title: 'Add a Tool:'
-labels: 'tools'
+labels: ''
 assignees: ''
 
 ---
@@ -62,4 +62,4 @@ Icon:
 *URL to an icon that you want displayed on the card. This will not be displayed as a field in the modal window.*
 
 ## FYI
-The data you provide will be added to the file: https://github.com/package-url/www.packageurl.org/blob/main/website/src/data/tools.json. 
+The data you provide will be added to the file: https://github.com/package-url/www.packageurl.org/blob/main/website/src/data/tools.json.
