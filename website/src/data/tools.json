@@ -354,7 +354,7 @@
         "platforms": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "n/a"
+        "logo": "img/favicon.ico"
     },
     {
         "name": "packageurl-go",
@@ -375,7 +375,7 @@
         "platforms": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "n/a"
+        "logo": "img/favicon.ico"
     },
     {
         "name": "packageurl-java",
@@ -396,7 +396,7 @@
         "platforms": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "n/a"
+        "logo": "img/favicon.ico"
     },
     {
         "name": "packageurl-js",
@@ -417,7 +417,7 @@
         "platforms": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "n/a"
+        "logo": "img/favicon.ico"
     },
     {
         "name": "packageurl-php",
@@ -438,7 +438,7 @@
         "platforms": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "n/a"
+        "logo": "img/favicon.ico"
     },
     {
         "name": "packageurl-python",
@@ -459,7 +459,7 @@
         "platforms": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "n/a"
+        "logo": "img/favicon.ico"
     },
     {
         "name": "packageurl-ruby",
@@ -480,7 +480,7 @@
         "platforms": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "n/a"
+        "logo": "img/favicon.ico"
     },
     {
         "name": "packageurl-swift",
@@ -501,7 +501,7 @@
         "platforms": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "n/a"
+        "logo": "img/favicon.ico"
     },
     {
         "name": "PackageURLs.jl",
@@ -564,7 +564,7 @@
         "platforms": "n/a",
         "standards": "PURL v1.0",
         "notes": "n/a",
-        "logo": "n/a"
+        "logo": "img/favicon.ico"
     },
     {
         "name": "PUrlKt",
