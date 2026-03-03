@@ -4,33 +4,35 @@ title: Getting Started
 hide_table_of_contents: true
 ---
 
+import Link from '@docusaurus/Link';
+
 # Getting Started
 
 ## Background
 
 Welcome to the Package-URL project and our website. The Package-URL project
-started in 2017 as an idea to define a standard URL-based syntax to identify 
-software packages, independent from their ecosystem or distribution channel. 
-The context was to uniquely identify software in [ScanCode-Toolkit](https://github.com/aboutcode-org/scancode-toolkit) 
-and other AboutCode projects. 
+started in 2017 as an idea to define a standard URL-based syntax to identify
+software packages, independent from their ecosystem or distribution channel.
+The context was to uniquely identify software in [ScanCode-Toolkit](https://github.com/aboutcode-org/scancode-toolkit)
+and other AboutCode projects.
 We called this software identifier PURL as an acronym for Package-URL.
 PURL quickly evolved into a *de facto* standard for software identification
 in SBOMs (e.g., [CycloneDX v1.2](https://cyclonedx.org/docs/1.2/json/#components_items_purl))
-and for vulnerability reporting. PURL was approved as an Ecma International 
+and for vulnerability reporting. PURL was approved as an Ecma International
 standard in 2025 as [ECMA-427](https://ecma-tc54.github.io/ECMA-427).
 
 With the growing awareness of software supply chain security issues, we also
 identified the need for a better way to define software version ranges
 for dependency management and vulnerability reporting. This led us to
-propose a standard URI-based syntax to define package version ranges 
-and version semantics (algorithm or procedure) to interpret a version 
-range notation. This specification is called VERS (VErsion Range 
+propose a standard URI-based syntax to define package version ranges
+and version semantics (algorithm or procedure) to interpret a version
+range notation. This specification is called VERS (VErsion Range
 Specifier). It was drafted in 2021 and will be proposed as an Ecma
 International standard in 2026.
 
 ## Use Cases
 
-Since PURL and VERS are specifications their primary use cases are 
+Since PURL and VERS are specifications their primary use cases are
 embedded in tools and systems that implement the specifications and
 in the external or internal exchange of PURL- or VERS-related data.
 - PURL has become the standard software identifier for SBOMs, dependency
@@ -50,31 +52,43 @@ distribution package (e.g., containers) for software origin, licensing and vulne
 - Software dependency analysis
 - Software vulnerability discovery and reporting
 
-See the [Tools](https://package-url.github.io/www.packageurl.org/docs/getting-started/toolgrid)
+{/* See the [Tools](https://package-url.github.io/www.packageurl.org/docs/getting-started/toolgrid)
+page below for a partial list of tools that have implemented PURL or VERS or both. */}
+
+See the <Link to="/docs/getting-started/toolgrid">Tools</Link>
 page below for a partial list of tools that have implemented PURL or VERS or both.
 
-See also the [Specifications](https://package-url.github.io/www.packageurl.org/docs/getting-started/specgrid)
+{/* - <Link to="/docs/getting-started/toolgrid">Tools</Link> */}
+
+{/* See also the [Specifications](https://package-url.github.io/www.packageurl.org/docs/getting-started/specgrid)
+page below for a list of specifications that have implemented PURL or VERS or both. */}
+
+See also the <Link to="/docs/getting-started/specgrid">Specifications</Link>
 page below for a list of specifications that have implemented PURL or VERS or both.
 
-If you want to add a tool or specification that supports PURL please create an issue in the 
-[Package-URL website repository](https://github.com/package-url/www.packageurl.org/issues). 
-There are separate issue templates for 'Add a Tool' and 'Add a Specification' because the 
+{/* - <Link to="/docs/getting-started/specgrid">Specifications</Link> */}
+
+If you want to add a tool or specification that supports PURL please create an issue in the
+[Package-URL website repository](https://github.com/package-url/www.packageurl.org/issues).
+There are separate issue templates for 'Add a Tool' and 'Add a Specification' because the
 data fields are different.
 
 ## Package-URL Community
 Package-URL has an active and growing community - we welcome your participation!
-- See our [Meetings](https://package-url.github.io/www.packageurl.org/docs/participate/participate-meetings)
+- See our <Link to="/docs/participate/participate-meetings">Meetings</Link>
 page for information about our meetings.
-- See our [Events](https://package-url.github.io/www.packageurl.org/docs/participate/participate-events)
-page for information about upcoming events where people will be talking about PURL and VERS and information 
+- See our <Link to="/docs/participate/participate-events">Events</Link>
+page for information about upcoming events where people will be talking about PURL and VERS and information
 from recent events where PURL or VERS were discussed.
 
+{/* - See our [Meetings](https://package-url.github.io/www.packageurl.org/docs/participate/participate-meetings)
+page for information about our meetings.
+- See our [Events](https://package-url.github.io/www.packageurl.org/docs/participate/participate-events)
+page for information about upcoming events where people will be talking about PURL and VERS and information
+from recent events where PURL or VERS were discussed. */}
 
+{/* ---
 
+- <Link to="/docs/participate/participate-meetings">Meetings</Link>
 
-
-
-
-
-
-
+- <Link to="/docs/participate/participate-events">Events</Link> */}
