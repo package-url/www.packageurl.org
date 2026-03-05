@@ -1,3 +1,10 @@
+---
+id: specification
+title: Core Specification
+sidebar_label: Core Specification
+hide_table_of_contents: true
+---
+
 # Core Specification
 
 PURL stands for **Package-URL**.

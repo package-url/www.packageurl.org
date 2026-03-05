@@ -1,10 +1,11 @@
 ---
-id: purl-spec-schemas
-title: Package-URL JSON Schemas
+id: schemas
+title: Schemas
 sidebar_label: Schemas
+hide_table_of_contents: true
 ---
 
-# Package-URL JSON Schemas
+# Schemas
 
 
 ## PURL Type Definition

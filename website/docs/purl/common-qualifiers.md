@@ -1,3 +1,10 @@
+---
+id: common-qualifiers
+title: PURL qualifiers guidance
+sidebar_label: PURL qualifiers guidance
+hide_table_of_contents: true
+---
+
 # PURL qualifiers guidance
 
 The PURL **qualifiers** component is intended to provide flexibility to define important PURL information at the PURL **type** level. This flexibility is

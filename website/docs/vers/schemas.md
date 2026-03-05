@@ -1,10 +1,11 @@
 ---
-id: vers-spec-schemas
-title: VERS JSON Schemas
+id: schemas
+title: Schemas
 sidebar_label: Schemas
+hide_table_of_contents: true
 ---
 
-# VERS JSON Schemas
+# Schemas
 
 ## VERS Tests
 

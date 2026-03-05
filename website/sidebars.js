@@ -1,13 +1,13 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
     purl: [
-        'purl/purl-spec-introduction',
+        'purl/introduction',
         {
             type: 'category',
             label: 'Specification',
             link: {
                 type: 'doc',
-                id: 'purl/purl-spec-folder-page', // The doc to display
+                id: 'purl/specification-folder', // The doc to display
             },
             collapsed: false,
             items: [
@@ -18,29 +18,36 @@ const sidebars = {
                 'purl/tests',
             ],
         },
-        'purl/purl-spec-purl-types',
-        'purl/purl-spec-schemas',
-        // 'purl/purl-spec-adopters',
+        'purl/purl-types',
+        'purl/schemas',
     ],
     vers: [
-        'vers/vers-spec-introduction',
-        'vers/vers-spec-specification',
-        'vers/vers-spec-schemas',
-        // 'vers/vers-spec-adopters',
+        'vers/introduction',
+        {
+            type: 'category',
+            label: 'Specification',
+            link: {
+                type: 'doc',
+                id: 'vers/specification-folder', // The doc to display
+            },
+            collapsed: false,
+            items: [
+                'vers/specification',
+                'vers/how-to-parse',
+                'vers/tests',
+            ],
+        },
+        'vers/version-schemes',
+        'vers/schemas',
+        'vers/faq',
     ],
-    // adopters: [
-    //     'adopters/adopters-intro',
-    //     'adopters/specgrid',
-    //     'adopters/toolgrid',
-    // ],
-
     getting_started: [
         {
             type: 'category',
             label: 'Getting Started',
             link: {
                 type: 'doc',
-                id: 'getting-started/getting-started-intro', // The doc to display
+                id: 'getting-started/introduction', // The doc to display
             },
             collapsed: false,
             items: [
@@ -49,11 +56,10 @@ const sidebars = {
             ],
         },
     ],
-
     participate: [
-        'participate/participate-contribute',
-        'participate/participate-meetings',
-        'participate/participate-events',
+        'participate/contribute',
+        'participate/meetings',
+        'participate/events',
     ],
 };
 

@@ -1,3 +1,10 @@
+---
+id: how-to-parse
+title: How to parse a PURL
+sidebar_label: How to parse a PURL
+hide_table_of_contents: true
+---
+
 # How to parse a PURL
 
 ## How to parse a **PURL** string into its components

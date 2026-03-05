@@ -1,3 +1,10 @@
+---
+id: how-to-build
+title: How to build a PURL
+sidebar_label: How to build a PURL
+hide_table_of_contents: true
+---
+
 # How to build a PURL
 
 ## How to build a PURL string from its components

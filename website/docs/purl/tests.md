@@ -1,3 +1,10 @@
+---
+id: tests
+title: PURL test overview
+sidebar_label: PURL test overview
+hide_table_of_contents: true
+---
+
 # PURL test overview
 
 ## Tests
@@ -10,17 +17,17 @@ to the PURL specification for tool functions such as:
 - parse a canonical PURL string into a set of PURL components
 - parse a PURL string input and rebuild it as a canonical PURL string
 
-The current  JSON schema is available at: [`purl-spec/schemas/purl-test.schema-0.1.json`](https://github.com/package-url/purl-spec/blob/main/schemas/purl-test.schema-0.1.json).
+The current  JSON schema is available at: [purl-spec/schemas/purl-test.schema-0.1.json](https://github.com/package-url/purl-spec/blob/main/schemas/purl-test.schema-0.1.json).
 
 The test files are available at:
-- [`purl-spec/tests/spec/`](https://github.com/package-url/purl-spec/tree/main/tests/spec):
+- [purl-spec/tests/spec/](https://github.com/package-url/purl-spec/tree/main/tests/spec):
 This folder contains JSON test files that are not for a specific PURL type.
-  - [`specification-test.json`](https://github.com/package-url/purl-spec/blob/main/tests/spec/specification-test.json) - This file contains an array of test
+  - [specification-test.json](https://github.com/package-url/purl-spec/blob/main/tests/spec/specification-test.json) - This file contains an array of test
   objects that primarily cover testing the validity of individual PURL
   components,   separators between PURL components, and complete PURL strings.
   - There is a proposal to add separate test files in this folder for each
   PURL component.
-- [`purl-spec/tests/types/`](https://github.com/package-url/purl-spec/tree/main/tests/types): This folder contains one JSON test file for each registered PURL type.
+- [purl-spec/tests/types/](https://github.com/package-url/purl-spec/tree/main/tests/types): This folder contains one JSON test file for each registered PURL type.
 These tests should be focused on test cases that are specific to a PURL type,
 such as those for namespace or qualifiers.
 
@@ -39,9 +46,9 @@ permissive than base tests. They may correct some errors.
 
 There are three PURL test types:
 - **build**: A test to build a canonical PURL output string from an input of
-decoded PURL components. See also [`/docs/how-build.md`](https://github.com/package-url/purl-spec/blob/main/docs/how-to-build.md).
+decoded PURL components. See also [/docs/how-build.md](https://github.com/package-url/purl-spec/blob/main/docs/how-to-build.md).
 - **parse**: A test to parse a PURL input string into a set of decoded
-components. See also [`/docs/how-parse.md`](https://github.com/package-url/purl-spec/blob/main/docs/how-to-parse.md).
+components. See also [/docs/how-parse.md](https://github.com/package-url/purl-spec/blob/main/docs/how-to-parse.md).
 - **roundtrip**: A test to parse an input PURL string and then rebuild it as a
  canonical PURL output string.
 

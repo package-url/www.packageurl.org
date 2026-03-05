@@ -71,33 +71,36 @@ const config = {
                     editUrl: ({ docPath }) => {
                         // Explicit mapping of Docusaurus path → actual GitHub source
                         const editUrlMap = {
-                            // New "PURL" section
+                            // "PURL" section
                             'purl/common-qualifiers.md': `https://github.com/package-url/purl-spec/blob/main/docs/common-qualifiers.md`,
                             'purl/how-to-build.md': `https://github.com/package-url/purl-spec/blob/main/docs/how-to-build.md`,
                             'purl/how-to-parse.md': `https://github.com/package-url/purl-spec/blob/main/docs/how-to-parse.md`,
-                            'purl/purl-spec-adopters.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
-                            'purl/purl-spec-folder-page.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
-                            'purl/purl-spec-introduction.md': `https://github.com/package-url/purl-spec/blob/main/docs/standard/introduction.md`,
-                            'purl/purl-spec-purl-types.mdx': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
-                            'purl/purl-spec-schemas.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
+                            'purl/introduction.md': `https://github.com/package-url/purl-spec/blob/main/docs/standard/introduction.md`,
+                            'purl/purl-types.mdx': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
+                            'purl/schemas.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
+                            'purl/specification-folder.mdx': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
                             'purl/specification.md': `https://github.com/package-url/purl-spec/blob/main/docs/standard/specification.md`,
                             'purl/tests.md': `https://github.com/package-url/purl-spec/blob/main/docs/tests.md`,
 
                             // "VERS" section
-                            'vers-spec/vers-spec-introduction.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
-                            'vers-spec/vers-spec-specification.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
-                            'vers-spec/vers-spec-schemas.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
-                            'vers-spec/vers-spec-adopters.md': `https://github.com/package-url/vers-spec/blob/main/ADOPTERS.md`,
-
-                            // "Adopters"
-                            'adopters/adopters-intro.mdx': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
-                            'adopters/specgrid.mdx': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
-                            'adopters/toolgrid.mdx': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
+                            'vers/faq.md': `https://github.com/package-url/vers-spec/blob/main/docs/faq.md`,
+                            'vers/how-to-parse.md': `https://github.com/package-url/vers-spec/blob/main/docs/faq.md`,
+                            'vers/introduction.md': `https://github.com/package-url/vers-spec/blob/main/docs/standard/introduction.md`,
+                            'vers/schemas.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
+                            'vers/specification-folder.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
+                            'vers/specification.md': `https://github.com/package-url/vers-spec/blob/main/docs/standard/specification.md`,
+                            'vers/tests.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
+                            'vers/version-schemes.md': `https://github.com/package-url/vers-spec/blob/main/docs/version-schemes.md`,
 
                             // "Particpate"
-                            'participate/participate-contribute.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
-                            'participate/participate-meetings.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
-                            'participate/participate-events.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
+                            'participate/contribute.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
+                            'participate/events.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
+                            'participate/meetings.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
+
+                            // "Getting Started"
+                            'getting-started/introduction.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
+                            'getting-started/specgrid.mdx': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
+                            'getting-started/toolgrid.mdx': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
                         };
 
                         // Return the mapped URL if it exists
@@ -134,56 +137,60 @@ const config = {
                     { to: '/', label: 'Home', position: 'left', exact: true },
                     {
                         label: 'PURL',
-                        to: '/docs/purl/purl-spec-introduction',
+                        to: '/docs/purl/introduction',
                         position: 'left',
                         activeBaseRegex: `^${siteConfig[deployTarget].baseUrl}docs/purl/`,
                         items: [
                             {
-                                to: '/docs/purl/purl-spec-introduction',
+                                to: '/docs/purl/introduction',
                                 label: 'Introduction',
                             },
                             {
-                                to: '/docs/purl/purl-spec-folder-page',
+                                to: '/docs/purl/specification-folder',
                                 label: 'Specification',
                             },
                             {
-                                to: '/docs/purl/purl-spec-purl-types',
+                                to: '/docs/purl/purl-types',
                                 label: 'PURL Types',
                             },
                             {
-                                to: '/docs/purl/purl-spec-schemas',
+                                to: '/docs/purl/schemas',
                                 label: 'Schemas',
                             },
                         ],
                     },
                     {
                         label: 'VERS',
-                        to: '/docs/vers/vers-spec-introduction',
+                        to: '/docs/vers/introduction',
                         position: 'left',
                         activeBaseRegex: `^${siteConfig[deployTarget].baseUrl}docs/vers/`,
                         items: [
                             {
-                                to: '/docs/vers/vers-spec-introduction',
+                                to: '/docs/vers/introduction',
                                 label: 'Introduction',
                             },
                             {
-                                to: '/docs/vers/vers-spec-specification',
+                                to: '/docs/vers/specification',
                                 label: 'Specification',
                             },
                             {
-                                to: '/docs/vers/vers-spec-schemas',
+                                to: '/docs/vers/schemas',
                                 label: 'Schemas',
+                            },
+                            {
+                                to: '/docs/vers/faq',
+                                label: 'FAQ',
                             },
                         ],
                     },
                     {
                         label: 'Getting Started',
-                        to: '/docs/getting-started/getting-started-intro',
+                        to: '/docs/getting-started/introduction',
                         position: 'left',
                         activeBaseRegex: `^${siteConfig[deployTarget].baseUrl}docs/getting-started/`,
                         items: [
                             {
-                                to: '/docs/getting-started/getting-started-intro',
+                                to: '/docs/getting-started/introduction',
                                 label: 'Getting Started',
                             },
                             {
@@ -198,20 +205,20 @@ const config = {
                     },
                     {
                         label: 'Participate',
-                        to: '/docs/participate/participate-contribute',
+                        to: '/docs/participate/contribute',
                         position: 'left',
                         activeBaseRegex: `^${siteConfig[deployTarget].baseUrl}docs/participate/`,
                         items: [
                             {
-                                to: '/docs/participate/participate-contribute',
+                                to: '/docs/participate/contribute',
                                 label: 'Contribute',
                             },
                             {
-                                to: '/docs/participate/participate-meetings',
+                                to: '/docs/participate/meetings',
                                 label: 'Meetings',
                             },
                             {
-                                to: '/docs/participate/participate-events',
+                                to: '/docs/participate/events',
                                 label: 'Events',
                             },
                         ],
