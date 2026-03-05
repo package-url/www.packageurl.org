@@ -170,7 +170,7 @@ const config = {
                                 label: 'Introduction',
                             },
                             {
-                                to: '/docs/vers/specification',
+                                to: '/docs/vers/specification-folder',
                                 label: 'Specification',
                             },
                             {
