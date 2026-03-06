@@ -5,8 +5,6 @@ sidebar_label: Specification
 hide_table_of_contents: true
 ---
 
-import Link from '@docusaurus/Link';
-
 # Specification
 
 The PURL specification has been standardized with
@@ -24,7 +22,7 @@ The key elements of the PURL specification are:
   [Clause 6 of ECMA-427](https://ecma-tc54.github.io/ECMA-427/#sec-purl-type-schema).
 
 You can also access the JSON Schema and an interactive HTML version of Schema
-from the <Link to="/docs/purl/schemas">Schemas</Link> page below.
+from the [Schemas](/docs/purl/schemas) page below.
 
 - **PURL qualifiers guidance**: Information about commonly used PURL
   **qualifiers** **key=value** pairs.

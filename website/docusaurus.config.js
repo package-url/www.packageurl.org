@@ -78,7 +78,7 @@ const config = {
                             'purl/introduction.md': `https://github.com/package-url/purl-spec/blob/main/docs/standard/introduction.md`,
                             'purl/purl-types.mdx': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
                             'purl/schemas.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
-                            'purl/specification-folder.mdx': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
+                            'purl/specification-folder.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
                             'purl/specification.md': `https://github.com/package-url/purl-spec/blob/main/docs/standard/specification.md`,
                             'purl/tests.md': `https://github.com/package-url/purl-spec/blob/main/docs/tests.md`,
 
@@ -98,7 +98,7 @@ const config = {
                             'participate/meetings.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
 
                             // "Getting Started"
-                            'getting-started/introduction.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
+                            'getting-started/introduction.mdx': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
                             'getting-started/specgrid.mdx': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
                             'getting-started/toolgrid.mdx': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
                         };

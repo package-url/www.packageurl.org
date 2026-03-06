@@ -17,4 +17,4 @@ specification for VErsion Range Specifier.
 a VERS.
 - **Version schemes**: Summary of **version-schemes** for many package
 ecosystems and vulnerability databases.
-- <Link to="/docs/vers/vers-spec-schemas.md">VERS Test JSON Schema</Link>
+- [VERS Test JSON Schema](/docs/vers/schemas.md)
