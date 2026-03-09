@@ -31,17 +31,15 @@ To parse a VERS string:
   **version-constraints** strings. Consecutive pipes shall be treated as one.
   Leading and trailing pipes are ignored.
 - For each **version-constraints** string:
-    - Determine if the **version-constraints** string starts with one of the
-     two **comparators**: [what does this mean? 2 versus a list of 5]
-        - If it starts with '>=', then the comparator is '>='.
-        - If it starts with '<=', then the comparator is '<='.
-        - If it starts with '!=', then the comparator is '!='.
-        - If it starts with '<', then the comparator is '<'.
-        - If it starts with '>', then the comparator is '>'.
-        - Remove the comparator from **version-constraints** string
-          start. The remaining string is the version.
+    - Determine if the **version-constraints** string starts with a valid
+      **comparator**:  '>=', '<=', '!=', '<', '>', '=', or '*'.
+    - If the **version-constraints** string does not start with a valid
+      **comparator**, then report an error.
+      If the **comparator** is one of: '>=', '<=', '!=', '<', or '>', then remove
+      the comparator from **version-constraints** string start. The remaining
+      string is the version.
     - Otherwise the version is the full **version-constraints** string
-      (which implies an equality comparator of '=')
+      (which implies an equality comparator of '=').
     - Tools should validate and report an error if the version is
       empty.
     - If the version contains a percent '%' character, apply URL

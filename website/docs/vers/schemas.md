@@ -6,9 +6,9 @@ hide_table_of_contents: true
 ---
 
 # VERS Test Schema
-The VErsion Range Specifier (VERS) specification provides a JSON Schema and test files to support language-neutral 
-testing of VERS implementations. The objectives for the VERS test schema and test files are to enable tools to conform 
-to the VERS specification for tool functions such as:
+
+The VErsion Range Specifier (VERS) specification provides a JSON Schema and
+test files to support language-neutral testing of VERS implementations.
 
 The **VERS Test JSON Schema** provides the structure for tools to conform to the VERS specification for tool functions such as:
 - Build a VERS string from a native ecosystem data source
