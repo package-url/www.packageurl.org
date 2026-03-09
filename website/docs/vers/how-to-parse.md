@@ -35,7 +35,7 @@ To parse a VERS string:
       **comparator**:  '>=', '<=', '!=', '<', '>', '=', or '*'.
     - If the **version-constraints** string does not start with a valid
       **comparator**, then report an error.
-      If the **comparator** is one of: '>=', '<=', '!=', '<', or '>', then remove
+    - If the **comparator** is one of: '>=', '<=', '!=', '<', or '>', then remove
       the comparator from **version-constraints** string start. The remaining
       string is the version.
     - Otherwise the version is the full **version-constraints** string
