@@ -52,21 +52,13 @@ the source of truth and define the structure of each PURL **type**, including:
 - Repository requirements
 - Mapping of PURL concepts to the native ecosystem concepts
 
-On commit, a job automatically:
-
-- Checks that all JSON files are schema-valid
-- Formats all the JSON files
-- Generates the ``purl-types-index.json`` file containing a list of registered 
-PURL **type**s
-- Generates human-readable documentation for each type
-
 ## How to Propose a New PURL Type
 
-To propose a new PURL type, create an issue and a corresponding*pull request in the repository with:
+To propose a new PURL type, please start by creating an [issue](https://github.com/package-url/purl-spec/issues) 
+using the "Register a new PURL type" template in the PURL specification repository.
 
-- a new JSON definition file under `types/`.
-- a new JSON test file file under `tests/types/`.
+You may also want to create a draft PR to document the PURL component definitions.
+Ensure that your PURL component definitions follow the [PURL Type Definition Schema](https://github.com/package-url/purl-spec/blob/main/schemas/purl-type-definition.schema-1.0.json).
+See also the [ECMA-427 Core Specification](https://ecma-tc54.github.io/ECMA-427/#sec-purl-specification).
 
-Ensure that your proposal follows the [**PURL Type Definition Schema**](https://github.com/package-url/purl-spec/blob/main/schemas/purl-type-definition.schema-1.0.json) 
-and includes all required fields. See the file: `README-dev.md` for details to
-run local checks.
+*Additional instructions to follow.*
