@@ -14,41 +14,41 @@ import TypeGrid from '@site/src/components/TypeGrid';
 Each package manager, platform, type, or ecosystem has its own conventions
 and protocols to identify, locate, and provision software packages.
 
-The package `type` is the component of a Package-URL that is used to
-capture this information with a short string such as `maven`, `npm`,
-`nuget`, `gem`, `pypi`, etc.
+The package **type** is the component of a Package-URL that is used to
+capture this information with a short string such as 'maven', 'npm',
+'nuget', 'gem', 'pypi', etc.
 
 PURL type definitions are maintained in a set of JSON Schema files with a
-separate file for each `purl` `type`. Each `purl` `type` has a corresponding
+separate file for each PURL **type**. Each PURL **type** has a corresponding
 file of automatically generated documentation. There is also a simple index
-of all currently registered purl types.
+of all currently registered PURL **type**s.
 
 ## Registered PURL Types
 
-There are currently 38 Registered PURL `type`s - click on a type to see the documentation for that type.
+Click on a **type** in the table to see the documentation for that **type**.
 
 <TypeGrid />
 
 ## Where to find PURL type information
 
-- In individual JSON files, one for each `purl` `type` definition at:
+- In individual JSON files, one for each PURL **type** definition at:
   https://github.com/package-url/purl-spec/tree/main/types
 
-- As Markdown documentation, generated from each `purl` `type` JSON
+- As Markdown documentation, generated from each PURL **type** JSON
   definition at:
   https://github.com/package-url/purl-spec/tree/main/types-doc
 
-- In the JSON Index listing of all registered PURL types at:
+- In the JSON Index listing of all registered PURL **type**s at:
   https://github.com/package-url/purl-spec/tree/main/purl-types-index.json
 
 ## How PURL Types are maintained
 
-PURL type definitions are maintained as JSON definition files and JSON
+PURL **type** definitions are maintained as JSON definition files and JSON
 test files in the PURL specification repository. These JSON files serve as
-the source of truth and define the structure of each PURL type, including:
+the source of truth and define the structure of each PURL **type**, including:
 
-- Namespace and name formatting rules
-- Supported qualifiers
+- **Namespace** and **name** formatting rules
+- Supported **qualifiers**
 - Repository requirements
 - Mapping of PURL concepts to the native ecosystem concepts
 
@@ -56,18 +56,17 @@ On commit, a job automatically:
 
 - Checks that all JSON files are schema-valid
 - Formats all the JSON files
-- Generates the ``purl-types-index.json`` file containing a list of defined
-  registered PURL types
+- Generates the ``purl-types-index.json`` file containing a list of registered 
+PURL **type**s
 - Generates human-readable documentation for each type
 
 ## How to Propose a New PURL Type
 
-To propose a new PURL type, create an **issue** and a corresponding
-**pull request** in the repository with:
+To propose a new PURL type, create an issue and a corresponding*pull request in the repository with:
 
 - a new JSON definition file under `types/`.
 - a new JSON test file file under `tests/types/`.
 
-Ensure that your proposal follows the **PURL Type Definition Schema** and
-includes all required fields. For this see the README-dev.md for details to
+Ensure that your proposal follows the [**PURL Type Definition Schema**](https://github.com/package-url/purl-spec/blob/main/schemas/purl-type-definition.schema-1.0.json) 
+and includes all required fields. See the file: `README-dev.md` for details to
 run local checks.
