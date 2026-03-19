@@ -77,8 +77,7 @@
     background-color: #101010;
 }
 
-/* 2026-02-26 Thursday 10:39:10.  Add underscore to new dropdown navbar item when active. */
-/* Make dropdown parent underline when active */
+/* Add underscore to new dropdown navbar item when active. */
 .navbar__link.active {
   text-decoration: underline;
 }

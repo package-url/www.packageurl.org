@@ -27,8 +27,8 @@
 
 /* Dark mode */
 [data-theme='dark'] .card {
-    background: #1d1f21; /* dark gray */
-    color: #e5e5e5; /* light text */
+    background: #1d1f21;
+    color: #e5e5e5;
 }
 
 [data-theme='dark'] .column h2 {

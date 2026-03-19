@@ -1,8 +1,6 @@
 import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-
 import styles from './styles.module.css';
-
 import getTypes from '@site/src/data/getTypes';
 
 export default function TypeGrid() {

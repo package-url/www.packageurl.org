@@ -40,7 +40,6 @@ export default function GeneralInfoSection() {
                             and has been designated{' '}
                             <a
                                 className='a_page'
-                                // href='https://ecma-international.org/publications-and-standards/standards/ecma-427/'
                                 href='https://ecma-tc54.github.io/ECMA-427/'
                                 target='_blank'
                             >

@@ -1,4 +1,3 @@
-/* Grid layout (reuse existing) */
 .toolGridWrapper {
     margin: 0.5rem auto;
     margin: 0 auto;
@@ -13,9 +12,7 @@
 }
 
 .toolGridContainer {
-    /* max-width: 1200px; */
     width: 100%;
-    /* Center the toolgrid on the page. */
     margin: 0 auto;
 }
 [data-theme='dark'] .toolGridContainer {
@@ -42,7 +39,7 @@
     /* Remove sizing from flexbox layout */
     flex: none;
     max-width: none;
-    /* Keep your vertical stacking */
+    /* Keep vertical stacking */
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
@@ -298,11 +295,11 @@
 }
 
 .logoWrapper {
-  flex-shrink: 0;        /* logo never shrinks */
-  width: 40px;           /* pick your static width */
-  height: 40px;          /* consistent box */
+  flex-shrink: 0; /* logo never shrinks */
+  width: 40px; /* pick your static width */
+  height: 40px; /* consistent box */
   display: flex;
-  align-items: flex-start;    /* align logo at the top */
+  align-items: flex-start; /* align logo at the top */
   justify-content: center;
 }
 
@@ -318,7 +315,6 @@
   object-fit: contain;
 }
 
-/* 2026-02-09 Monday 18:38:03. */
 .field_tooltip {
     position: absolute;
     bottom: 100%;
