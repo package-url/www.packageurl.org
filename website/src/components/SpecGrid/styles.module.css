@@ -1,4 +1,3 @@
-/* Grid layout (reuse existing) */
 .specGridWrapper {
     margin: 0.5rem auto;
     padding: 1rem;
@@ -12,9 +11,7 @@
 }
 
 .specGridContainer {
-    /* max-width: 1200px; */
     width: 100%;
-    /* Center the specgrid on the page. */
     margin: 0 auto;
 }
 [data-theme='dark'] .specGridContainer {
@@ -40,7 +37,7 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     /* Remove sizing from flexbox layout */
     flex: none;
-    /* Keep your vertical stacking */
+    /* Keep vertical stacking */
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
@@ -101,7 +98,6 @@
     padding: 1rem;
 }
 
-/* Adding 'position: relative;' hoping to position the alert inside the open modal. Alert's no longer used, right?*/
 .modalContent {
     background: white;
     border-radius: 8px;
@@ -297,11 +293,11 @@
 }
 
 .logoWrapper {
-  flex-shrink: 0;        /* logo never shrinks */
-  width: 40px;           /* pick your static width */
-  height: 40px;          /* consistent box */
+  flex-shrink: 0; /* logo never shrinks */
+  width: 40px; /* static width */
+  height: 40px; /* consistent box */
   display: flex;
-  align-items: flex-start;    /* align logo at the top */
+  align-items: flex-start; /* align logo at the top */
   justify-content: center;
 }
 

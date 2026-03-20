@@ -3,9 +3,8 @@ import styles from './styles.module.css';
 import tools from '@site/src/data/tools.json';
 import tool_field_help from '@site/src/data/tool_field_help.json';
 
-// 2026-02-24 Tuesday 17:02:45.  Fix how asset (e.g., /img) paths are resolved.
+// Fix how asset (e.g., /img) paths are resolved.
 import useBaseUrl from '@docusaurus/useBaseUrl';
-// Below replace 'src={tool.logo}' with 'src={useBaseUrl(tool.logo)}'
 
 export default function ToolGrid() {
     const [selectedTool, setSelectedTool] = useState(null);
@@ -151,8 +150,6 @@ export default function ToolGrid() {
                                             }`}
                                         >
                                             <img
-                                                // src={tool.logo}
-                                                // src={useBaseUrl(tool.logo)}
                                                 src={useBaseUrl(tool.logo)}
                                                 alt={`${tool.name} logo`}
                                                 className={styles.logoImg}

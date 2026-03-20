@@ -234,7 +234,7 @@ const config = {
                         position: 'right',
                     },
                     {
-                        href: 'https://cyclonedx.slack.com/archives/C06KTE3BWEB',
+                        href: 'https://cyclonedx.slack.com',
                         label: 'Slack',
                         position: 'right',
                     },

@@ -3,9 +3,8 @@ import styles from './styles.module.css';
 import specs from '@site/src/data/specifications.json';
 import spec_field_help from '@site/src/data/spec_field_help.json';
 
-// 2026-02-24 Tuesday 17:02:45.  Fix how asset (e.g., /img) paths are resolved.
+// Fix how asset (e.g., /img) paths are resolved.
 import useBaseUrl from '@docusaurus/useBaseUrl';
-// Below replace 'src={spec.logo}' with 'src={useBaseUrl(spec.logo)}'
 
 export default function SpecGrid() {
     const [selectedSpec, setSelectedSpec] = useState(null);
@@ -145,7 +144,6 @@ export default function SpecGrid() {
                                     {isUsableValue(spec.logo) && (
                                         <div className={styles.logoWrapper}>
                                             <img
-                                                // src={spec.logo}
                                                 src={useBaseUrl(spec.logo)}
                                                 alt={`${spec.name} logo`}
                                                 className={styles.logoImg}
