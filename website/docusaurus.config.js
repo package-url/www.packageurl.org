@@ -108,6 +108,11 @@ const config = {
                             return editUrlMap[docPath];
                         }
 
+                        // Do not enable editing for the auto-generated types *-definition.md files copied from the purl-spec repo.
+                        if (docPath.startsWith('purl-spec/types-doc/')) {
+                        return undefined;
+                        }
+
                         // For files that live in www.packageurl.org repo (about/, participate/, etc.)
                         // return `https://github.com/package-url/www.packageurl.org/edit/main/docs/${docPath}`;
 
