@@ -722,7 +722,7 @@
         "source_download": "n/a",
         "package_download": "https://pypi.org/project/vulnerablecode/",
         "documentation_url": "https://vulnerablecode.readthedocs.io/en/stable/",
-        "service_url": "n/a",
+        "service_url": "https://public.vulnerablecode.io/",
         "language": "Python",
         "software_license": "Apache-2.0",
         "data_license": "n/a",
@@ -731,7 +731,7 @@
         "functions": "n/a",
         "platforms": "Container, Linux",
         "standards": "PURL v1.0",
-        "notes": "n/a",
+        "notes": "Coming soon: https://public2.vulnerablecode.io/.",
         "logo": "img/nexB_icon.svg"
     },
     {
