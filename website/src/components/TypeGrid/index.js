@@ -25,7 +25,7 @@ export default function TypeGrid() {
                             <a
                                 key={idx}
                                 href={pkg.url}
-                                target='_blank'
+                                target='_self'
                                 rel='noopener noreferrer'
                                 className={styles.packageCell}
                             >
