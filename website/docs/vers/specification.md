@@ -2,7 +2,7 @@
 id: specification
 title: Core Specification
 sidebar_label: Core Specification
-hide_table_of_contents: true
+hide_table_of_contents: false
 ---
 
 # Core specification

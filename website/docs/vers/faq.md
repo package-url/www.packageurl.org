@@ -2,7 +2,7 @@
 id: faq
 title: FAQ
 sidebar_label: FAQ
-hide_table_of_contents: true
+hide_table_of_contents: false
 ---
 
 # FAQ

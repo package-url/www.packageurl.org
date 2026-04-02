@@ -2,7 +2,7 @@
 id: contribute
 title: Contribute
 sidebar_label: Contribute
-hide_table_of_contents: true
+hide_table_of_contents: false
 ---
 
 # Contribute
