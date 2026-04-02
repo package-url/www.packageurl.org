@@ -2,7 +2,7 @@
 id: how-to-parse
 title: How to parse and validate VERS
 sidebar_label: How to parse and validate VERS
-hide_table_of_contents: true
+hide_table_of_contents: false
 ---
 
 # How to parse and validate VERS

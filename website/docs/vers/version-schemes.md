@@ -2,7 +2,7 @@
 id: version-schemes
 title: Version schemes
 sidebar_label: Version schemes
-hide_table_of_contents: true
+hide_table_of_contents: false
 ---
 
 # Version schemes
