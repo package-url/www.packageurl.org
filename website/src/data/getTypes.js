@@ -31,6 +31,11 @@ export default function getPackages(baseUrl) {
             logo: `${baseUrl}img/Cargo-Logo-Small.png`,
         },
         {
+            name: "chrome-extension",
+            url: `${baseUrl}docs/purl-spec/types-doc/chrome-extension-definition`,
+            logo: `${baseUrl}img/small-chrome-ext.png`,
+        },
+        {
             name: "cocoapods",
             url: `${baseUrl}docs/purl-spec/types-doc/cocoapods-definition`,
             logo: "https://github.com/cocoapods.png",
