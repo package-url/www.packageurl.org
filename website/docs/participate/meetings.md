@@ -26,18 +26,20 @@ inquire about temporarily joining as an observer or being invited as an expert.
 
 ## Bi-weekly Community Meeting
 
--   **When**: Every other Wednesday at 16:00 UTC
--   **Topic**: Discussion of the [PURL](https://github.com/package-url/purl-spec)
+- **When**: Every other Wednesday at 16:00 UTC
+- **Topic**: Discussion of the [PURL](https://github.com/package-url/purl-spec)
 and [VERS](https://github.com/package-url/vers-spec) specifications and
 related projects
--   **Where**: https://meet.google.com/ryq-aimn-ghd
+- **Where**: https://meet.google.com/ryq-aimn-ghd
+- **Meeting minutes**: [Package-URL Community Meeting Minutes](https://github.com/package-url/community/tree/main/meetings/purl-community)
 
 ## Bi-weekly TC54/TG2 Meeting
 
--   **When**: Every other Friday at 14:00 UTC
--   **Topic**: TG2 is the Ecma TC54 working group responsible for the 
+- **When**: Every other Friday at 14:00 UTC
+- **Topic**: TG2 is the Ecma TC54 working group responsible for the 
 [PURL](https://github.com/package-url/purl-spec) and [VERS](https://github.com/package-url/vers-spec) specifications
--   **Where**: https://meet.google.com/ryq-aimn-ghd
+- **Where**: https://meet.google.com/ryq-aimn-ghd
+- **Meeting minutes**: [Ecma TC54/TG2 Meeting Minutes](https://github.com/Ecma-TC54/tg2/tree/main/meetings)
 
 See the dates for the next meetings at the [Ecma TC54 Package-URL](https://tc54.org/purl/) site.
 
