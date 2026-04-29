@@ -188,6 +188,27 @@
         "notes": "n/a",
         "logo": "n/a"
     },
+        {
+        "name": "meta-package-manager",
+        "publisher": "Kevin Deldycke",
+        "description": "A unifying CLI (mpm) that wraps ~30 package managers (Homebrew, apt, pip, npm, ...) behind a single interface. Accepts plain, versioned and pkg: PURL specifiers on search, install, upgrade and remove subcommands, and dispatches to the appropriate package manager based on the PURL type.",
+        "homepage_url": "https://github.com/kdeldycke/meta-package-manager",
+        "repository_url": "https://github.com/kdeldycke/meta-package-manager",
+        "source_download": "https://github.com/kdeldycke/meta-package-manager/releases",
+        "package_download": "https://pypi.org/project/meta-package-manager/",
+        "documentation_url": "https://kdeldycke.github.io/meta-package-manager/",
+        "service_url": "n/a",
+        "language": "Python",
+        "software_license": "GPL-2.0-or-later",
+        "data_license": "n/a",
+        "service_license": "n/a",
+        "type": "CLI Utility",
+        "functions": "n/a",
+        "platforms": "Linux, MacOS, Windows, BSD",
+        "standards": "PURL v1.0",
+        "notes": "Also produces SBOMs (CycloneDX, SPDX) referencing packages by PURL.",
+        "logo": "img/meta-package-manager.png"
+    },
     {
         "name": "nscuro/versatile",
         "publisher": "Niklas Scuro",
