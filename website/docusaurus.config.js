@@ -234,7 +234,7 @@ const config = {
                     },
 
                     {
-                        href: 'https://github.com/package-url/www.packageurl.org',
+                        href: 'https://github.com/package-url/',
                         label: 'GitHub',
                         position: 'right',
                     },
