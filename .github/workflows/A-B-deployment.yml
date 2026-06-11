@@ -127,6 +127,16 @@ jobs:
           echo "Listing build root:"
           ls -la build
 
+      - name: Test SSH connection
+        run: |
+          ssh -i ~/.ssh/id_rsa \
+            -o IdentitiesOnly=yes \
+            -o StrictHostKeyChecking=no \
+            -o BatchMode=yes \
+            -v \
+            ${{ secrets.DREAMHOST_USER }}@${{ secrets.DREAMHOST_HOST }} \
+            "echo SSH_OK" 2>&1 | tail -30
+
       - name: Deploy via rsync
         run: |
           rsync -avz --delete build/ \
