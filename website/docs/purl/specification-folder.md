@@ -24,14 +24,14 @@ The key elements of **ECMA-427** are:
 - This text is also available on this website as the
 - [Introduction](https://package-url.github.io/www.packageurl.org/docs/purl/introduction) above.
 - [Clause 1 - Scope](https://ecma-tc54.github.io/ECMA-427/#sec-scope): A brief statement
- of the ECMA-427 scope
+ of the ECMA-427 scope.
 - [Clause 2 - Conformance](https://ecma-tc54.github.io/ECMA-427/#sec-conformance):
 This clause defines conformance to the PURL standard.
 - [Clause 3 - Normative References](https://ecma-tc54.github.io/ECMA-427/#sec-normative-references):
 This clause lists 3 external documents that are normative references for the 
 PURL standard.
 - [Clause 4 - Overview](https://ecma-tc54.github.io/ECMA-427/#sec-overview):
-This is a non-normative overview of the Package-URL specification.
+This is a non-normative overview of the PURL standard.
 - [Clause 5 - Package-URL Specification](https://ecma-tc54.github.io/ECMA-427/#sec-purl-specification):
 This text is also referred to as the [Core Specification](https://packageurl.org/docs/purl/specification)
 on this website.
