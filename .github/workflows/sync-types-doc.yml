@@ -55,11 +55,11 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
           git add website/docs/purl-spec/types-doc/
           if git diff --cached --quiet; then
             echo "No changes — types-doc already up to date with purl-spec@${{ steps.purl-spec-sha.outputs.sha_short }}"
           else
-            git pull --rebase origin main
             git commit \
               -m "chore: sync types-doc from purl-spec@${{ steps.purl-spec-sha.outputs.sha_short }}" \
               -m "Source: https://github.com/package-url/purl-spec/commit/${{ steps.purl-spec-sha.outputs.sha }}"
