@@ -6,7 +6,7 @@ export default function HomepageHeader() {
     <div className={styles.fullHero}>
       <div className={styles.heroInner}>
         <h1 className={styles.heroTitle}>
-          Welcome to www.packageurl.org
+          Package-URL (aka. PURL)
         </h1>
         <p className={styles.heroSubtitle}>
           A simple, consistent, and flexible approach for
