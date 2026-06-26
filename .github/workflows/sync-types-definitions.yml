@@ -33,7 +33,7 @@ jobs:
             https://github.com/package-url/purl-spec.git \
             /tmp/purl-spec
           cd /tmp/purl-spec
-          git sparse-checkout set types/definitions
+          git sparse-checkout set docs/types/definitions
 
       - name: Capture purl-spec HEAD commit SHA
         id: purl-spec-sha
@@ -48,7 +48,7 @@ jobs:
           # --delete ensures files retired from purl-spec are removed here too.
           # Retired files remain recoverable via git history.
           rsync -av --delete \
-            /tmp/purl-spec/types/definitions/ \
+            /tmp/purl-spec/docs/types/definitions/ \
             website/docs/purl-spec/types/definitions/
 
       - name: Commit and push if changed
