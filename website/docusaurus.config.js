@@ -109,7 +109,7 @@ const config = {
                         }
 
                         // Do not enable editing for the auto-generated types *-definition.md files copied from the purl-spec repo.
-                        if (docPath.startsWith('purl-spec/types-doc/')) {
+                        if (docPath.startsWith('purl-spec/types/definitions/')) {
                         return undefined;
                         }
 
@@ -239,7 +239,7 @@ const config = {
                         position: 'right',
                     },
                     {
-                        href: 'https://cyclonedx.slack.com',
+                        href: 'https://join.slack.com/t/aboutcode-org/shared_invite/zt-31uzazd7l-tBHcqKUKkX6jUEPRLswiNw',
                         label: 'Slack',
                         position: 'right',
                     },

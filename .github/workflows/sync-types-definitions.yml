@@ -6,8 +6,8 @@ on:
   workflow_dispatch:       # manual trigger for testing
 
 jobs:
-  sync-types-doc:
-    name: Sync types-doc from purl-spec
+  sync-types-definitions:
+    name: Sync types/definitions from purl-spec
     runs-on: ubuntu-latest
     permissions:
       contents: write      # push sync commit to main
@@ -24,7 +24,7 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Sparse-checkout purl-spec types-doc
+      - name: Sparse-checkout purl-spec types/definitions
         run: |
           git clone \
             --depth 1 \
@@ -33,7 +33,7 @@ jobs:
             https://github.com/package-url/purl-spec.git \
             /tmp/purl-spec
           cd /tmp/purl-spec
-          git sparse-checkout set types-doc
+          git sparse-checkout set types/definitions
 
       - name: Capture purl-spec HEAD commit SHA
         id: purl-spec-sha
@@ -44,23 +44,23 @@ jobs:
 
       - name: Copy type definition files
         run: |
-          mkdir -p website/docs/purl-spec/types-doc
+          mkdir -p website/docs/purl-spec/types/definitions
           # --delete ensures files retired from purl-spec are removed here too.
           # Retired files remain recoverable via git history.
           rsync -av --delete \
-            /tmp/purl-spec/types-doc/ \
-            website/docs/purl-spec/types-doc/
+            /tmp/purl-spec/types/definitions/ \
+            website/docs/purl-spec/types/definitions/
 
       - name: Commit and push if changed
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add website/docs/purl-spec/types-doc/
+          git add website/docs/purl-spec/types/definitions/
           if git diff --cached --quiet; then
-            echo "No changes — types-doc already up to date with purl-spec@${{ steps.purl-spec-sha.outputs.sha_short }}"
+            echo "No changes — types/definitions already up to date with purl-spec@${{ steps.purl-spec-sha.outputs.sha_short }}"
           else
             git commit \
-              -m "chore: sync types-doc from purl-spec@${{ steps.purl-spec-sha.outputs.sha_short }}" \
+              -m "chore: sync types/definitions from purl-spec@${{ steps.purl-spec-sha.outputs.sha_short }}" \
               -m "Source: https://github.com/package-url/purl-spec/commit/${{ steps.purl-spec-sha.outputs.sha }}"
             git pull --rebase origin main
             git push origin main
