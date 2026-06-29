@@ -155,6 +155,10 @@ const config = {
                                 label: 'Specification',
                             },
                             {
+                                to: '/docs/purl/tests',
+                                label: 'PURL test overview',
+                            },
+                            {
                                 to: '/docs/purl/purl-types',
                                 label: 'PURL Types',
                             },
@@ -177,6 +181,10 @@ const config = {
                             {
                                 to: '/docs/vers/specification-folder',
                                 label: 'Specification',
+                            },
+                            {
+                                to: '/docs/vers/tests',
+                                label: 'VERS test overview',
                             },
                             {
                                 to: '/docs/vers/version-schemes',
