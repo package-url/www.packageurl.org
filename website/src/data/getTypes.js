@@ -188,7 +188,7 @@ export default function getPackages(baseUrl) {
         {
             name: "vcpkg",
             url: `${baseUrl}docs/purl-spec/types/definitions/vcpkg-definition`,
-            logo: `${baseUrl}img/vcpkg-mark`,
+            logo: `${baseUrl}img/vcpkg-mark.svg`,
         },
         {
             name: "vscode-extension",
