@@ -15,7 +15,7 @@ The key elements of the current VERS specification are:
 specification for VErsion Range Specifier.
 - **How to parse and validate VERS**: Instructions for validating and parsing
 a VERS.
-- **Version schemes**: Summary of **version-schemes** for many package
+- **Version types**: Summary of VERS **types** for many package
 ecosystems and vulnerability databases.
 - **VERS test schema**: [VERS Test JSON Schema](/docs/vers/schemas) documents
 nine VERS 'test_types' for use by tools that implement VERS.

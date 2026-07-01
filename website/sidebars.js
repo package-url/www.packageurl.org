@@ -37,7 +37,7 @@ const sidebars = {
             ],
         },
         'vers/tests',
-        'vers/version-schemes',
+        'vers/vers-types',
         'vers/schemas',
         'vers/faq',
     ],
