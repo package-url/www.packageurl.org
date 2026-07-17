@@ -11,56 +11,63 @@ hide_table_of_contents: false
 
 To parse a VERS string:
 
-- Remove all spaces and tabs.
+- Check that the VERS string is canonical.
+- Tools shall report an error if the VERS string contains any ASCII whitespace
+  character (including SPACE, TAB, and LF).
 - Start from left, and split once on colon ':'.
 - The left hand side is the URI-scheme that shall be lowercase.
     - Tools shall validate that the URI-scheme value is 'vers'.
 - The right hand side is the specifier.
 - Split the specifier from left once on a slash '/'.
-- The left hand side is the **version-scheme** that shall be
-  lowercase. Tools should validate that the **version-scheme** is a
-  known scheme.
-- The right hand side is a list of one or more constraints. Tools
-  validate that this **version-constraints** string is not empty
+- The left hand side is the **type** that shall be lowercase. Tools should 
+   validate that the **type** is a known **type**.
+- The right hand side is a list of one or more constraints. Tools 
+  validate that this **constraints** string is not empty
   ignoring spaces.
-- If the string is equal to '\*', the **version-constraints** value is
+- If the string is equal to '\*', the **constraints** value is
  '*'. Parsing is done and no further processing is needed for this VERS.
   A tool should report an error if there are characters other than '\*'.
-- Strip leading and trailing pipes '|' from the constraints string.
+- Tools shall report an error if the constraints string has a leading or
+  trailing pipe '|'.
 - Split the constraints on pipe '|'. The result is a list of
-  **version-constraints** strings. Consecutive pipes shall be treated as one.
-  Leading and trailing pipes are ignored.
-- For each **version-constraints** string:
-    - Determine if the **version-constraints** string starts with a valid
-      **comparator**:  '>=', '<=', '!=', '<', '>', '=', or '*'.
-    - If the **version-constraints** string does not start with a valid
-      **comparator**, then report an error.
-    - If the **comparator** is one of: '>=', '<=', '!=', '<', or '>', then remove
-      the comparator from **version-constraints** string start. The remaining
-      string is the version.
-    - Otherwise the version is the full **version-constraints** string
-      (which implies an equality comparator of '=').
+  **constraints** strings. Tools shall report an error if consecutive
+  pipes are present.
+- For each **constraints** string:
+    - Determine if the **constraints** string starts with one of the
+      two-character **comparators** ('>=', '<=', '!=') or one-character
+      **comparators** ('<', '>'):
+        - If it starts with '>=', then the comparator is '>='.
+        - If it starts with '<=', then the comparator is '<='.
+        - If it starts with '!=', then the comparator is '!='.
+        - If it starts with '<', then the comparator is '<'.
+        - If it starts with '>', then the comparator is '>'.
+        - Remove the comparator from **constraints** string
+          start. The remaining string is the version.
+    - Otherwise the version is the full **constraints** string
+      (which implies an equality comparator of '=')
     - Tools should validate and report an error if the version is
       empty.
     - If the version contains a percent '%' character, apply URL
       quoting rules to unquote this string.
-    - Append the parsed **version-constraints** strings to the
-      constraints list.
+    - Append the parsed **constraints** strings to the constraints list.
 
 Finally:
 
-- The results are the **version-scheme** and the list of
-  **version-constraints** strings.
+- The results are the **type** and the list of **constraints** strings.
 
-Tools should optionally validate and simplify the list of
-**version-contraints** strings once parsing is complete by:
+Tools should optionally validate and simplify the list of **constraints** 
+strings once parsing is complete by:
 
 - Sorting and validating the list of constraints
-- Simplifying the list of constraints
 
-### Version-constraints simplification
+Tools shall report an error if the parsed constraints are non-canonical,
+including non-canonical ordering, duplicate versions, or invalid comparator
+sequences. Tools should not auto-correct non-canonical input during parsing.
 
-Tools can simplify a list of **version-constraints** strings using the following approach.
+### Constraints simplification
+
+Tools can simplify a list of **constraints** strings using the following 
+ approach.
 
 These pairs of contiguous constraints with these **comparators** are valid:
 
@@ -68,7 +75,8 @@ These pairs of contiguous constraints with these **comparators** are valid:
 - '=', '<', or '<=' followed by '=', '!=', '>', or '>='
 - '>', or '>=' followed by '!=', '<', or '<='
 
-These pairs of contiguous constraints with these **comparators** are redundant and invalid (ignoring any instances of '!=' because they can show up anywhere):
+These pairs of contiguous constraints with these **comparators** are redundant
+ and invalid (ignoring any instances of '!=' because they can show up anywhere):
 
 - '=', '<' or '<=' followed by '<' or '<=:' this is the same as '<' or '<='
 - '>' or '>=' followed by '=', '>' or '>=:' this is the same as '>' or '>='
@@ -118,7 +126,7 @@ To check if a "tested version" is contained within a version range:
 
 - Start from a parsed version range specifier with:
 
-    - a **version-scheme**
+    - a VERS **type**
     - a list of constraints of **comparator** and **version**, sorted by
       version and where each version occurs only once in any
       constraint.
@@ -170,12 +178,11 @@ To check if a "tested version" is contained within a version range:
 
 ### Notes and caveats
 
-- Comparing versions from VERS notations with a different
-  **version-scheme** is an error. Even though there may be some
-  similarities between the "semver" version for an "npm" and the
-  "deb" version for its Debian packaging, the way versions are
-  compared for each **version-scheme** may be different. Tools should
-  report an error in this case.
+- Comparing versions from VERS notations with a different **type** is an 
+error. Even though there may be some similarities between the "semver" version
+for an "npm" and the "deb" version for its Debian packaging, the way versions 
+are compared for each **type** may be different. Tools should report an error 
+in this case.
 - All references to sorting or ordering of version constraints mean
-  sorting by version. And sorting by versions always implies using the
-  **version-scheme**-specified version comparison and ordering.
+  sorting by version. And sorting by versions always implies using the VERS
+  **type**-specified version comparison and ordering.
