@@ -72,15 +72,15 @@ const config = {
                         // Explicit mapping of Docusaurus path → actual GitHub source
                         const editUrlMap = {
                             // "PURL" section
-                            'purl/common-qualifiers.md': `https://github.com/package-url/purl-spec/blob/main/docs/common-qualifiers.md`,
-                            'purl/how-to-build.md': `https://github.com/package-url/purl-spec/blob/main/docs/how-to-build.md`,
-                            'purl/how-to-parse.md': `https://github.com/package-url/purl-spec/blob/main/docs/how-to-parse.md`,
-                            'purl/introduction.md': `https://github.com/package-url/purl-spec/blob/main/docs/standard/introduction.md`,
+                            'purl/common-qualifiers.md': `https://github.com/package-url/purl-spec/blob/main/docs/specification/common-qualifiers.md`,
+                            'purl/how-to-build.md': `https://github.com/package-url/purl-spec/blob/main/docs/specification/how-to-build.md`,
+                            'purl/how-to-parse.md': `https://github.com/package-url/purl-spec/blob/main/docs/specification/how-to-parse.md`,
+                            'purl/introduction.md': `https://github.com/package-url/purl-spec/blob/main/docs/specification/standard/introduction.md`,
                             'purl/purl-types.mdx': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
                             'purl/schemas.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
                             'purl/specification-folder.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
-                            'purl/specification.md': `https://github.com/package-url/purl-spec/blob/main/docs/standard/specification.md`,
-                            'purl/tests.md': `https://github.com/package-url/purl-spec/blob/main/docs/tests.md`,
+                            'purl/specification.md': `https://github.com/package-url/purl-spec/blob/main/docs/specification/standard/specification.md`,
+                            'purl/tests.md': `https://github.com/package-url/purl-spec/blob/main/docs/tests/test-overview.md`,
 
                             // "VERS" section
                             'vers/faq.md': `https://github.com/package-url/vers-spec/blob/main/docs/faq.md`,
