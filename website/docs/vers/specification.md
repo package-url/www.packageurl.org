@@ -20,7 +20,7 @@ Components are separated by a specific character for unambiguous parsing.
 | ------------------- | ----------- |:------------------------------------------------------ |
 | scheme              | Required    | The URL scheme with the constant value of "vers". |
 | type                | Required    | The version specification type such as "semver", "npm", "deb", etc. |
-| constraints         | Required    | Version constraints may be repeated as many times as needed to accurately reflect the intended range. The separator between version-constraints is a single pipe '\|'. |
+| constraints         | Required    | Version constraints may be repeated as many times as needed to accurately reflect the intended range. The separator between constraints is a single pipe '\|'. |
 
 ## Separator characters
 This is how each of the Separator Characters is used:
@@ -58,18 +58,18 @@ specifications at: - https://tools.ietf.org/html/rfc3986
 A **type** defines:
 
 - the specific notation and conventions used for a version string encoded 
-according to this type
+  according to this type
 - how two versions are compared to determine if a version is inside or 
-outside a range
+  outside a range
 - how a type-specific range notation can be transformed into VERS 
-notation
+  notation
 
 A **type** also defines:
 - how to compare two version strings using **comparators**
 - the structure (if any) of a **version** string such as "1.2.3". For
-example, the "semver" specification for version numbers defines a version as 
-composed primarily of three dot-separated numeric segments named "major", 
-"minor" and "patch".
+  example, the "semver" specification for version numbers defines a version as 
+  composed primarily of three dot-separated numeric segments named "major", 
+  "minor" and "patch".
 
 By convention a **type** should be the same as the
 PURL **type** for a given package ecosystem. It is, however, allowed to
@@ -78,14 +78,14 @@ such as a scheme that applies to a single package or project.
 
 ### constraints
 - The **constraints** component shall be preceded by an unencoded
-'/' slash separator when not empty.
+  '/' slash separator when not empty.
 - Each instance of the **constraints** component is composed of either
-a single **version** as in '1.2.3' or the combination of a **comparator** and
-a **version** as in '>=2.0.0'.
+  a single **version** as in '1.2.3' or the combination of a **comparator** 
+  and a **version** as in '>=2.0.0'.
 - A **comparator** always precedes the **version** with no characters allowed
-between the **comparator** and the **version**
+  between the **comparator** and the **version**
 - Multiple **constraints** strings shall be separated by an unencoded
-pipe '|'. The pipe "|" has no special meaning other than being a separator.
+  pipe '|'. The pipe "|" has no special meaning other than being a separator.
 
 #### Comparator characters
 A **comparator** is composed of these ASCII characters: 
@@ -97,29 +97,29 @@ A **comparator** is composed of these ASCII characters:
 
 A **comparator** must be one of the following:
 - '=' is the Equality **comparator**. This means a version must be equal to
-the provided version.
+  the provided version.
 - '!=' is the Inequality **comparator**. This means that a version must not be
-equal to the provided version and it must be excluded from the range.
-For example: '!=1.2.3' means that version   "1.2.3" is excluded.
+  equal to the provided version and it must be excluded from the range.
+  For example: '!=1.2.3' means that version   "1.2.3" is excluded.
 - '<' is the Less-than **comparator**. This includes all versions less than
-the provided version. 
+  the provided version. 
 - '<=': is the Less-or-equal **comparator**. This includes all versions less
-than or equal to the provided version. For example '<=1.2.3' means
-less than or equal to "1.2.3".
+  than or equal to the provided version. For example '<=1.2.3' means
+  less than or equal to "1.2.3".
 - '>' is the Greater-than **comparator**. This includes all versions greater
-than the provided version.
+  than the provided version.
 - '>=' is the Greater-or-equal **comparator**. This includes all versions
-greater than or equal to the provided version. For example '>=1.2.3'
-means greater than or equal to "1.2.3".
+  greater than or equal to the provided version. For example '>=1.2.3'
+  means greater than or equal to "1.2.3".
 - The special Asterisk '\*' **comparator** matches any version. It must be
-used alone and exclusive of any other constraint and must not be followed
-by a version. For example, 'vers:deb/\*' represents all versions of a
-Debian package. This includes past, current and possible future versions.
+  used alone and exclusive of any other constraint and must not be followed
+  by a version. For example, 'vers:deb/\*' represents all versions of a
+  Debian package. This includes past, current and possible future versions.
 
 #### Version strings
 A Version is an ASCII string.
 
-A single **version** in a **constraints** string means that a version 
+A single **version** in a **constraints** string means that a version
 equal to this version satisfies the range specification. Equality is based on 
 the equality of two normalized version strings according to the applicable
 **type**. For most schemes, this is a simple string equality. A 
@@ -137,20 +137,20 @@ with tools. The rules are designed to prevent the creation of empty or
 impossible version ranges.
 
 - A VERS string shall already be in canonical form. Non-canonical 
-(unnormalized) forms are invalid and tools shall report an error instead of 
-normalizing them automatically.
+  (unnormalized) forms are invalid and tools shall report an error instead of 
+  normalizing them automatically.
 - A version range specifier contains only printable ASCII letters,
-digits and punctuation.
+  digits and punctuation.
 - ASCII whitespace is not permitted in a VERS string. Tools shall report an
-error if any Whitespace character, for example SPACE (0x20), TAB (0x09), or 
-LF (0x0A), is used.
+  error if any Whitespace character, for example SPACE (0x20), TAB (0x09), or 
+  LF (0x0A), is used.
 - The VERS **scheme** and **type** are always lowercase as in
-'vers:npm'.
+  'vers:npm'.
 - Versions are case-sensitive. A **type** may specify
-its own case sensitivity.
+  its own case sensitivity.
 - If a version in a **constraints** string contains **separator** or
-**comparator** characters (i.e., '>', '<', '=', '!', '*', '|'), the version
-shall be quoted using the URL quoting rules. This should be rare in practice.
+  **comparator** characters (i.e., '>', '<', '=', '!', '*', '|'), the version
+  shall be quoted using the URL quoting rules. This should be rare in practice.
 
 The list of **constraints** strings for a range are like a set of 
 signposts in the version timeline of a package. The separators do not mean 
@@ -160,36 +160,36 @@ With a few simple validation rules, we can avoid the creation of most empty or
  impossible version ranges. These rules are:
 
 - Constraints are sorted by version. The canonical ordering is the
-version order. The ordering of **constraints** components
-is significant for validity: tools shall report an error for
-non-canonical ordering.
+  version order. The ordering of **constraints** components
+  is significant for validity: tools shall report an error for
+  non-canonical ordering.
 - Versions are unique. Each version must be unique in a range
-and can occur only once in any **constraints** component of
-VERS, regardless of the **comparators**. Tools shall report an
-error for duplicated versions.
+  and can occur only once in any **constraints** component of
+  VERS, regardless of the **comparators**. Tools shall report an
+  error for duplicated versions.
 - There can be only one asterisk: if used, '\*' must occur only once and alone
-in a range, without any other constraint or version.
+  in a range, without any other constraint or version.
 
 Starting from a de-duplicated and sorted list of constraints, these
 extra rules apply to the **comparators** of any two contiguous constraints:
 
 - A constraint using the '!=' **comparator** can be followed by a constraint
-using any **comparator** (any of '=', '!=', '>', '>=', '<', '<=') or no
-constraint.
+  using any **comparator** (any of '=', '!=', '>', '>=', '<', '<=') or no
+  constraint.
 
 Ignoring all constraints with the '!=' **comparator**:
 
 - A constraint using the '=' **comparator** must be followed only by a 
-constraint with one of   '=', '>', or '>=' as the **comparator** or no 
-constraint.
+  constraint with one of   '=', '>', or '>=' as the **comparator** or no 
+  constraint.
 
 Ignoring all constraints with a '=' or '!=' **comparator**, the sequence
 of constraints must be an alternation of Greater-than and Lesser-than
 **comparators**:
 - A constraint using '\<' and '\<=' must be followed by one of '>' or '>=' 
-(or no constraint).
+  (or no constraint).
 - A constraint using '>' and '>=' must be followed by one of '\<' or '\<=' 
-(or no constraint). 
+  (or no constraint). 
 
 Tools must report an error for such invalid ranges.
 
