@@ -3,7 +3,7 @@
 ## Overview
 This is the repository for the Package-URL public website. It is based on
 [Docusaurus](https://docusaurus.io/docs).
-This website is currently in an Alpha phase with the primary focus on content
+This website is currently in a Beta phase with the primary focus on content
 over format.
 
 We value contributions from members of the community.  You can always suggest
@@ -30,7 +30,7 @@ The "staging" version of the website is at: https://package-url.github.io/www.pa
 The website structure necessarily follows a Docusaurus template and
 configuration. There are two primary ways to update the website:
 - Many elements of the website -- including the navbar, the footer, the
-  sidebars, the home/anding page -- are complex to update.
+  sidebars, the home/landing page -- are complex to update.
     - For these website elements you should create an issue and the core team
       will create the PR or help you create one.
 - Most of the primary website content is composed of markdown files which are
@@ -94,7 +94,7 @@ Looking at the links in the website's navbar (defined in `../website/docusaurus.
             - *Core Specification*: `..website/docs/vers/specification.md`
             - *How to parse and validate VERS*: `..website/docs/vers/how-to-parse.md`
             - *VERS test overview*: `..website/docs/vers/tests.md`
-        - *Version schemes*: `..website/docs/vers/version-schemes.md`
+        - *VERS types*: `..website/docs/vers/vers-types.md`
         - *Schemas*: `..website/docs/vers/schemas.md`
         - *FAQ*: `..website/docs/vers/faq.md`
 
