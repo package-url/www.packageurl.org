@@ -26,6 +26,11 @@ export default function getPackages(baseUrl) {
             logo: `${baseUrl}img/bitnami-from-github.com_bitnami.png`,
         },
         {
+            name: "brew",
+            url: `${baseUrl}docs/purl-spec/types/definitions/brew-definition`,
+            logo: `${baseUrl}img/brew.png`,
+        },
+        {
             name: "cargo",
             url: `${baseUrl}docs/purl-spec/types/definitions/cargo-definition`,
             logo: `${baseUrl}img/Cargo-Logo-Small.png`,
