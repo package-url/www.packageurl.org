@@ -10,7 +10,10 @@ hide_table_of_contents: false
 VERS stands for "VErsion Range Specifier. A VERS is an ASCII URI string composed of
 three components:
 
-    scheme:type/constraints|
+    scheme:type/constraints
+
+When there are multiple **constraints**, they are separated by an unencoded
+pipe '|'.
 
 Components are separated by a specific character for unambiguous parsing.
 
@@ -97,7 +100,8 @@ A **comparator** is composed of these ASCII characters:
 
 A **comparator** shall be one of the following:
 - '=' is the Equality **comparator**. This means a version shall be equal to
-  the provided version.
+  the provided version. The Equality **comparator** shall only used implicitly, 
+  for example 'vers:npm/1.2.3' means that the version is equal to "1.2.3".
 - '!=' is the Inequality **comparator**. This means that a version shall not 
   be equal to the provided version and it shall be excluded from the range.
   For example: '!=1.2.3' means that version   "1.2.3" is excluded.
@@ -125,6 +129,9 @@ the equality of two normalized version strings according to the applicable
 **type**. For most schemes, this is a simple string equality. A
 **type** may, however, define normalization and other rules for
 equality such as the "pypi" rules from PEP 440.
+
+The equality comparator shall be implicit only and represented by a single
+**version** without any leading comparator character.
 
 A package version satisfies a set of **constraints** if it is
 contained within any of the intervals defined by the **constraints**.
