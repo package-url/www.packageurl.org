@@ -1,10 +1,3 @@
----
-id: introduction
-title: Introduction
-sidebar_label: Introduction
-hide_table_of_contents: true
----
-
 # Introduction
 
 There is no universal notation for software package version ranges and
@@ -18,11 +11,11 @@ vulnerable package version ranges means that these ranges may be ambiguous
 or hard to compute and may be replaced by complete enumerations of all
 impacted versions. Expressing and resolving a version range is often a complex
 and error prone task because of the ambiguity and the use of enumerations of
-impacted versions is an appproach that may require frequent updates. A version
+impacted versions is an approach that may require frequent updates. A version
 range is a necessary, compact, and practical way to reference multiple
 versions rather than listing all versions.
 
-VErsion Range Specifier (VERS) introduces a standard URI-based syntax to
+Version Range Specifier (VERS) introduces a standard URI-based syntax to
 define package version ranges and the semantics (algorithm or procedure) to
 interpret each version range notation. This standardization provides more
 accurate and consistent analysis of package version dependencies and the
