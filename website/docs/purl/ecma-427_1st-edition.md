@@ -1,5 +1,5 @@
 ---
-id: spec-placeholder
+id: ecma-427_1st-edition
 title: ECMA-427 1st Edition
 sidebar_label: ECMA-427 1st Edition
 hide_table_of_contents: true
