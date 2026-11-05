@@ -15,8 +15,9 @@ approved by [Ecma TC54](https://tc54.org/) and is pending approval by the Ecma
 General Assembly in December 2026.
 
 The [Release Notes for ECMA-427 2nd Edition](https://github.com/package-url/purl-spec/blob/main/docs/specification/ECMA-427-2nd_Edition-Release_notes.md)
-explain the major changes. See also <Link to="/docs/purl/test-schema-changes">PURL test schema v0.2 changes</Link>) for details about
-the related PURL Test Schema changes.
+explain the major changes.
+
+See also <Link to="/docs/purl/test-schema-changes">PURL test schema v0.2 changes</Link> for details about the related PURL Test Schema changes.
 
 The content of **ECMA-427** is a subset of the overall PURL specification but
 its content defines the normative standard. Some elements of the specification
