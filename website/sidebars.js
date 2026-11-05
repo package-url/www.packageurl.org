@@ -11,8 +11,8 @@ const sidebars = {
             },
             collapsed: false,
             items: [
-                'purl/spec-placeholder',
-                'purl/common-qualifiers',
+                'purl/ecma-427_1st-edition',
+                'purl/ecma-427_2nd-edition',
                 'purl/how-to-build',
                 'purl/how-to-parse',
             ],

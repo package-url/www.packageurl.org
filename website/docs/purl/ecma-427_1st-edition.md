@@ -1,5 +1,5 @@
 ---
-id: spec-placeholder
+id: ecma-427_1st-edition
 title: ECMA-427 1st Edition
 sidebar_label: ECMA-427 1st Edition
 hide_table_of_contents: true
@@ -35,6 +35,6 @@ The key elements of **ECMA-427** are:
   and rules for each PURL component
 - Clause 6 - Package-URL Type Definition Schema: A human-friendly version of
   the JSON schema. You can also access the JSON Schema or an interactive HTML
-  version of the Schema from the [Schemas](https://packageurl.org/docs/purl/schemas#purl-tests) page below.
+  version of the Schema from the [Schemas](https://packageurl.org/docs/purl/schemas) page below.
 - Annex A- PURL Type Definition: Copy of the JSON file for `purl-type-definition.schema-1.0.json`
 

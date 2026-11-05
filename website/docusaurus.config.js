@@ -72,14 +72,15 @@ const config = {
                         // Explicit mapping of Docusaurus path → actual GitHub source
                         const editUrlMap = {
                             // "PURL" section
-                            'purl/common-qualifiers.md': `https://github.com/package-url/purl-spec/blob/main/docs/specification/common-qualifiers.md`,
+                            'purl/ecma-427_1st-edition.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
+                            'purl/ecma-427_2nd-edition.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
                             'purl/how-to-build.md': `https://github.com/package-url/purl-spec/blob/main/docs/specification/how-to-build.md`,
                             'purl/how-to-parse.md': `https://github.com/package-url/purl-spec/blob/main/docs/specification/how-to-parse.md`,
                             'purl/introduction.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
                             'purl/purl-types.mdx': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
                             'purl/schemas.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
                             'purl/specification-folder.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
-                            'purl/spec-placeholder.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
+
 
                             'purl/tests-folder.md': `https://github.com/package-url/www.packageurl.org/blob/main/website/docs/${docPath}`,
                             'purl/test-overview.md': `https://github.com/package-url/purl-spec/blob/main/docs/tests/test-overview.md`,
