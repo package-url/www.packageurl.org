@@ -186,6 +186,11 @@ export default function getPackages(baseUrl) {
             logo: `${baseUrl}img/rpm-gh-logo.png`,
         },
         {
+            name: "spack",
+            url: `${baseUrl}docs/purl-spec/types/definitions/spack-definition`,
+            logo: `${baseUrl}img/spack-logo.svg`,
+        },
+        {
             name: "swid",
             url: `${baseUrl}docs/purl-spec/types/definitions/swid-definition`,
             logo: "n/a",
